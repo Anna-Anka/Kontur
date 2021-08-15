@@ -166,11 +166,13 @@
     }
 }
 
-div .form-rating {
-    padding: 14px 20px 13px 20px;
+.form-star {
+    .form-rating {
+        padding: 14px 20px 13px 20px;
 
-    @include max-w($lg) {
-        padding: 4px 5px 5px 10px;
+        @include max-w($lg) {
+            padding: 8px 5px 9px 10px;
+        }
     }
 }
 
@@ -178,6 +180,8 @@ div .form-rating {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: $main;
+    padding: 14px 20px 13px 20px;
 
     .form__error-item {
         border: none;

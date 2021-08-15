@@ -14,10 +14,35 @@
         position: relative;
     }
 
+    li.selected.sel {
+        opacity: 1;
+    }
+
     li.disabled {
         color: $special;
         opacity: 0.75;
         cursor: default;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 26px;
+            right: 20px;
+            width: 20px;
+            height: 16px;
+            opacity: 0.75;
+            background-repeat: no-repeat;
+            background-image: url('../img/icons/check-reverse-icon.svg');
+            background-size: 20px 16px;
+
+            @include max-w($lg) {
+                right: 15px;
+                width: 17px;
+                height: 13px;
+                top: 22px;
+            }
+        }
     }
 
     &__select {
@@ -76,7 +101,6 @@
             background-size: 20px 16px;
 
             @include max-w($lg) {
-                top: 4px;
                 right: -32px;
                 width: 17px;
                 height: 13px;

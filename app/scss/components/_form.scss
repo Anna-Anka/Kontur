@@ -102,10 +102,6 @@
         &::before {
             display: none;
         }  
-
-        @include max-w($lg) {
-            //height: auto;
-        }
     }
 
     &__icon {
@@ -118,7 +114,6 @@
         top: 22px;
 
         @include max-w($lg) {
-            top: 18px;
             right: 15px;
             width: 17px;
             height: 17px;

@@ -285,10 +285,19 @@ $(function () {
     });
 
     //Скрол
-    $('.menu__link, .main-slider__link, .services-top__link, .logo, .services-top__href, .drop__link').on('click', function (event) {
+    $('.main-slider__link, .services-top__link, .logo, .services-top__href, .drop__link').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top;
+            top = $(id).offset().top -70;
+        $('body, html').animate({
+            scrollTop: top
+        }, 1500);
+    });
+
+    $('.menu__link').on('click', function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 50;
         $('body, html').animate({
             scrollTop: top
         }, 1500);
