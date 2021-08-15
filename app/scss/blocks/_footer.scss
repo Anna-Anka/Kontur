@@ -1,0 +1,33 @@
+.footer {
+    padding: 15px;
+    background-color: $background;
+    @include adaptiv-value("font-size", 20, 16, 0);
+    font-weight: $fw-400;
+    line-height: 1.6;
+
+    @include max-w($xl) {
+        padding: 2px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0 20px;
+    }
+
+    &__logo {
+        @include max-w($sm) {
+            order: -1;
+        }
+    }
+
+    &__text {
+        &:last-child {
+            @include max-w($lm) {
+                margin-left: auto;
+            }
+        }
+    }
+}

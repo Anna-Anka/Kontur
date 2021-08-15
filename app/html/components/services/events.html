@@ -1,0 +1,93 @@
+<div class="services__item services__item--active services-events" id="services-events">
+    <div class="services-top">
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                организация мероприятий
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Для взрослых и детей с 5 лет мы проводим экскурсии в наш конноспортивный клуб. В такое
+                    мероприятие входит: экскурсия по территории кск, обед, просмотр тренировки, урок верховой
+                    езды. Эта предварительная программа. Все детали обговариваются индивидуально.
+                </p>
+                <p>
+                    Мы проводим и другие мероприятия: фестивали, открытые тренировки, мастер классы, организуем
+                    детские праздники. Остались вопросы? Заполните 
+                    <a class="services-top__href" href="#services-tabs__events">
+                        форму ниже
+                    </a>.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__events">
+                Забронировать
+            </a>
+        </div>
+        <div class="services-top__picture" style="background-image: url('img/services/events.jpg');"></div>
+    </div>
+
+    <div class="services__body">
+        <div class="services-tabs" id="services-tabs__events">
+        <form class="form" name="services-events">
+            <p class="form__heading">
+                заполните форму
+            </p>
+
+            <div class="form__item form__item--big">
+                <svg class="form__icon">
+                    <use xlink:href="img/sprite.svg#name-icon"></use>
+                </svg>
+                <label class="visually-hidden" for="services-events__name">
+                    Введите Ваше имя
+                </label>
+                <input class="form__input form__req" type="text" id="services-events__name" name="services-events__name" placeholder="Ваше имя*">
+            </div>
+
+            <div class="form__group">
+                <div class="form__item">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-events__phone">
+                        Введите Ваш номер телефона
+                    </label>
+                    <input class="form__input form__req" type="tel" id="services-events__phone" name="services-events__phone" placeholder="Ваш номер телефона*">
+                </div>
+                <div class="form__item">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-events__email">
+                        Введите Ваш e-mail
+                    </label>
+                    <input class="form__input form__req form__email" type="text" id="services-events__email" name="services-events__email" placeholder="Ваш e-mail*">
+                </div>
+            </div>
+
+            <div class="form__item form__item--big form__message">
+                <svg class="form__icon">
+                    <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                </svg>
+                <label class="visually-hidden" for="services-events__textarea">
+                    Введите Ваше сообщение
+                </label>
+                <textarea class="form__textarea form__input" id="services-events__textarea" name="services-events__textarea" placeholder="Ваше сообщение"></textarea>
+            </div>
+
+            <div class="form__agreement">
+                <input class="form__input form__check form__req check" type="checkbox" id="services-events__agreement">
+                <span class="form__styler form__req styler"></span>
+                <label class="form__label form__label--agreement" for="services-events__agreement">
+                    Даю согласие на обработку
+                </label>
+                <a class="form__link" href="#">
+                    персональных данных
+                </a>
+            </div>
+            
+            <button class="button form__button" type="submit">
+                Отправить
+            </button>
+        </form>
+        </div>
+    </div>
+</div>

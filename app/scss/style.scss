@@ -1,9 +1,31 @@
 @import 'fonts';
 @import 'vars';
 @import 'reset';
-//@import 'mixins';
-//@import 'libs';
+@import 'mixins';
+@import 'animation';
+@import 'libs';
 @import 'global';
 
-@import 'media';
+@import 'blocks/_header';
+@import 'blocks/_main-slider';
+@import 'blocks/_about';
+@import 'blocks/_gallery';
+@import 'blocks/_trainer';
+@import 'blocks/_reviews';
+@import 'blocks/_services';
+@import 'blocks/_questions';
+@import 'blocks/_contact';
+@import 'blocks/_footer';
+
+@import 'components/_trainer-card';
+@import 'components/_social';
+@import 'components/_review-card';
+@import 'components/_select';
+@import 'components/_calendar';
+@import 'components/_amount';
+@import 'components/_popups';
+@import 'components/_pricing-card';
+@import 'components/_form';
+
+
 

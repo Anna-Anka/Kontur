@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Контур</title>
+</head>
+
+<body id="body">
+    
+    @include("./components/header.html")
+
+    <main class="main">
+        @include("./components/main-slider.html")
+
+        @include("./components/about.html")
+
+        @include("./components/gallery.html")
+
+        @include("./components/trainer.html")
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services__title title">
+                    наши услуги
+                </h2>
+                @include("./components/services/professional.html")
+                @include("./components/services/classes.html")
+                @include("./components/services/walks.html")
+                @include("./components/services/photoshoot.html")
+                @include("./components/services/wait.html")
+                @include("./components/services/events.html")
+            </div>
+        </section>
+        
+        @include("./components/reviews.html")
+
+        @include("./components/question.html")
+
+        @include("./components/contact.html")
+
+    </main>
+
+    @include("./components/popups.html")
+   @include("./components/footer.html")
+
+</body>
+
+    <script src="js/main.min.js"></script>
+</html>

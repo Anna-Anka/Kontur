@@ -1,0 +1,147 @@
+.question {
+    position: relative;
+    padding: 98px 0;
+
+    @include max-w($xl) {
+        padding: 15px 0 25px;
+    }
+    
+    &__bg {
+        opacity: 0.65;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        background-attachment: fixed;
+    }
+
+    &__body {
+        opacity: 1;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+
+        @include max-w($lg) {
+            margin-bottom: 10px;
+        }
+
+        @include max-w($sm) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 900px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__top {
+        border: none;
+        width: 100%;
+        border-radius: 15px;
+        background-color: $background;
+        padding: 20px 60px 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 20;
+        position: relative;
+        cursor: pointer;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: $special;
+        transition: color 0.3s, transform 0.3s;
+        text-align: left;
+
+        @include max-w($lg) {
+            padding: 15px 40px 15px 15px;
+            font-size: 20px;
+        }
+
+        @include max-w($sm) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            background-color: $main;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url('../img/icons/plus-icon.svg');
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: center center;
+
+            @include max-w($lg) {
+                right: 15px;
+            }
+        }
+
+        &--active {
+            &::before {
+                background-image: url('../img/icons/minus-icon.svg');
+                background-size: 20px 3px;
+            }
+        }
+
+        &:hover  {
+            transform: translateY(-5px);
+        }
+
+        &:active {
+            color: $accent;
+        }
+
+        &:focus {
+            border: 2px solid $excretion;
+        }
+    }
+
+    &__answer {
+        background-color: $main;
+        z-index: 15;
+        position: relative;
+        font-size: 20px;
+        padding: 30px 40px 40px;
+        margin-top: -15px;
+        border-radius: 0 0 15px 15px;
+        display: none;
+
+        @include max-w($lg) {
+            font-size: 19px;
+            padding: 15px;
+        }
+
+        &--active {
+            display: block;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.reviews {
+    background-color: $background;
+    padding: 100px 0;
+
+    @include max-w($xl) {
+        padding: 15px 0 25px;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        
+        @include max-w($xl) {
+            margin-bottom: 20px;
+        }
+
+        @include max-w($sm) {
+            margin-bottom: 5px;
+        }
+
+        @include max-w($lm) {
+            margin-bottom: 53px;
+        }
+    }
+
+    &__items {
+        margin-bottom: 24px;
+        position: relative;
+
+        @include max-w($lg) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 45px;
+        @include adaptiv-value("gap", 45, 0, 0);
+    }
+
+    &__item {
+        background-color: $main;
+        border-radius: 5px;
+        box-shadow: (5px 5px 8px rgba(0, 0, 0, 0.1));
+        padding: 15px 15px 30px;
+        max-width: 370px;
+        max-height: 398px;
+        margin-bottom: 10px;
+        width: 100%;
+        position: relative;
+
+        @include max-w($lg) {
+            padding: 8px 10px 15px;
+            max-width: 360px;
+        }
+    }
+
+    &__next,
+    &__prev{
+        @include slick-arrow;
+        width: 65px;
+        height: 65px;
+        transform: translateY(-50%);
+        top: 50%;
+        background-color: $accent;
+
+        @include max-w($lx) {
+            top: -40px;
+            width: 55px;
+            height: 55px;
+            background-size: 35px 25px;
+        }
+
+        @include max-w($md) {
+            top: 50%;
+        }
+
+        @include max-w($sm) {
+            top: -30px;
+            width: 47px;
+            height: 47px;
+            background-size: 30px 20px;
+        }
+
+        &:hover {
+            background-color: $excretion;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            border: 2px solid $accent;
+            background-color: $main;
+        }
+    }
+
+    &__next {
+        @include adaptiv-value("right", -90, -20, 0);
+        background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
+
+        @include max-w($lx) {
+            right: 23px;
+        }
+
+        @include max-w($md) {
+            right: 0;
+        }
+
+        @include max-w($sm) {
+            right: 25px;
+        }
+
+        &:focus {
+            background-image: url('../img/icons/arrows/arrow-right-icon.svg');
+        }
+    }
+
+    &__prev {
+        @include adaptiv-value("left", -90, -20, 0);
+        background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
+
+        @include max-w($lx) {
+            left: unset;
+            right: 104px;
+        }
+
+        @include max-w($md) {
+            right: unset;
+            left: 0px;
+        }
+
+        @include max-w($sm) {
+            right: 95px;
+            left: unset;
+        }
+
+        &:focus {
+            background-image: url('../img/icons/arrows/arrow-left-icon.svg');
+        }
+    }
+
+    .slick-initialized .slick-slide {
+        justify-content: center;
+        display: flex;
+    }
+
+    .slick-disabled {
+        background-color: $main;
+        cursor: default;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $main;
+            border: none;
+        }
+    }
+
+    .slick-disabled.reviews__next {
+        background-image: url('../img/icons/arrows/arrow-right-icon.svg');  
+    }
+
+    .slick-disabled.reviews__prev {
+        background-image: url('../img/icons/arrows/arrow-left-icon.svg');  
+    }
+}
+
+div .form-rating {
+    padding: 14px 20px 13px 20px;
+
+    @include max-w($lg) {
+        padding: 4px 5px 5px 10px;
+    }
+}
+
+.form-rating {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .form__error-item {
+        border: none;
+    }
+
+    &__name {
+        margin-right: 7px;
+        font-size: 18px;
+        opacity: 0.75;
+        font-weight: $fw-400;
+        line-height: 2.1;
+        color: $special;
+        cursor: default;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__styler,
+    &__check {
+        top: 3px;
+    }
+
+    &__check {
+        &:checked+.form-rating__styler {
+            background-image: url('../img/icons/star-check-icon.svg');
+        }
+
+        &:focus+.form-rating__styler {
+            border: 1px solid $excretion;
+            border-radius: 5px;
+        }
+    }
+
+    &__styler {
+        left: 0;
+        background-image: url('../img/icons/star-icon.svg');
+    }
+}

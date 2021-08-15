@@ -1,0 +1,149 @@
+.contact {
+    padding: 100px 0;
+
+    @include max-w($xl) {
+        padding: 20px 0;
+    }
+
+    @include max-w($xl) {
+        padding: 15px 0;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+
+        @include max-w($lg) {
+            margin-bottom: 10px;
+        }
+
+        @include max-w($sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px 39px;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        padding-left: 35px;
+
+        @include max-w($lg) {
+            margin-right: auto;
+        }
+    }
+
+    &__item {
+        display: flex;
+        @include adaptiv-value("font-size", 22, 20, 0);
+        line-height: 1.7;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+
+            @include max-w($lg) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @include max-w($sm) {
+            display: block;
+        }
+    }
+
+    &__heading {
+        position: relative;
+        max-width: 170px;
+        width: 100%;
+        font-weight: $fw-500;
+
+        @include max-w($sm) {
+            display: block;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: -35px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        fill: $special;
+
+        @include max-w($sm) {
+            top: 8px;
+        }
+    }
+
+    &__text {
+        max-width: 310px;
+    }
+
+    &__href {
+        @include link;
+
+        @include max-w($sm) {
+            display: inline-block;
+        }
+    }
+
+    &__list {
+        @include max-w($sm) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__social {
+        margin-right: 44px;
+
+        @include max-w($lg) {
+            margin-right: 25px;
+        }
+    }
+
+    &__hours {
+        max-width: 180px;
+    }
+
+    &__map {
+        max-width: 640px;
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+        height: 368px;
+        border-radius: 5px;
+
+        @include max-w($lg) {
+            height: 39vw;
+        }
+
+        @include max-w($sm) {
+            height: 225px;
+        }
+    }
+
+    .social {
+        @include max-w($sm) {
+            gap: 10px 15px;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                @include max-w($md) {
+                    margin-right: 20px;
+                }
+
+                @include max-w($sm) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

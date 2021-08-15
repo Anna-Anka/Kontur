@@ -1,0 +1,127 @@
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="contact__title title">
+            контакты
+        </h2>
+        <div class="contact__inner">
+            <address class="contact__content">
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#map-marker-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Адрес
+                    </span>
+                    <p class="contact__text">
+                        Саурово, Павловский Посад, Московская обл.
+                    </p>
+                </div>
+
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#time-form-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Часы работы
+                    </span>
+                    <p class="contact__text contact__hours">
+                        Без выходных:
+                        10:00 - 15:00,
+                        16:00 - 21:00
+                    </p>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Телефон
+                    </span>
+                    <a class="contact__text contact__href" href="tel:+0140000199">
+                        + 014 000 01 99
+                    </a>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Почта
+                    </span>
+                    <a class="contact__text contact__href" href="mailto:kontur@gmail.com">
+                        kontur@gmail.com
+                    </a>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#internet-icon"></use>
+                    </svg>
+                    <span class="contact__heading contact__social">
+                        Мы в сетях
+                    </span>
+                    <ul class="social contact__list">
+                        <li class="social__item">
+                            <a class="social__link" href="https://desktop.telegram.org/" target="blank" style="background-image: url('img/telegram-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Telegram"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Vkontacte"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Instagram"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Facebook"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://twitter.com" target="blank" style="background-image: url('img/twitter-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Twitter"
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </address>
+            <div class="contact__map">
+                <div class="map" id="map">
+                    <span class="visually-hidden">
+                        Карта, по которой Вы сможете узнать наше месторасположение
+                    </span>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer>
+</script>
+
+<script>
+    function initMap() {
+        const myLatLng = { lat: 55.777356492461664, lng: 38.74747790315222 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: myLatLng,
+    });
+    new google.maps.Marker({
+        position: myLatLng,
+        map,
+    });
+    }
+</script>

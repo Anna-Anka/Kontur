@@ -1,0 +1,217 @@
+.main-slider {
+    padding-top: 75px;
+
+    @include max-w($lg) {
+        padding-top: 65px;
+    }
+
+    @include max-w($md) {
+        padding-top: 55px;
+    }
+
+    &__items {
+        display: block;
+    }
+
+    &__item {
+        position: relative;
+        height: calc(100vh - 75px);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+            @include blackout;
+            opacity: 0.6;
+        }
+
+        @include max-w($lg) {
+            height: calc(100vh - 65px);
+        }
+
+        @include max-w($md) {
+            height: calc(100vh - 55px);
+        }
+    }
+
+    &__offer {
+        max-width: 690px;
+        position: relative;
+        margin-left: auto;
+        color: $main;
+        z-index: 5;
+        padding-top: 77px;
+
+        @include max-w($xl) {
+            margin-right: auto;
+            margin-left: 0;
+            padding-top: 10px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 18px;
+        @include line-clamp(45px, 1.7, 4);
+
+        @include max-w($lg) {
+            margin-bottom: 3px;
+            @include line-clamp(28px, 1.7, 2);
+        }
+
+        @include max-w($md) {
+            font-size: 25px;
+        }
+
+        @include max-w($sm) {
+            font-size: 21px;
+        }
+    }
+
+    &__text {
+        max-width: 650px;
+        margin-bottom: 40px;
+        @include line-clamp(26px, 1.4, 6);
+
+        @include max-w($lg) {
+            margin-bottom: 20px;
+            @include line-clamp(20px, 1.4, 5);
+        }
+
+        @include max-w($md) {
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__next,
+    &__prev {
+        @include slick-arrow;
+        width: 75px;
+        height: 75px;
+        background-color: $main;
+        top: 65%;
+
+        @include max-w($lx) {
+            width: 65px;
+            height: 65px;
+        }
+
+        @include max-w($lg) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $accent;
+        }
+
+        &:active {
+            background-color: $special;
+        }
+
+        &:focus {
+            border: 3px solid $accent;
+        }
+    }
+
+    &__next {
+        right: 60px;
+        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
+
+        &:hover,
+        &:active {
+            background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
+        }
+
+        @include max-w($xl) {
+            right: 30px;
+        }
+    }
+
+    &__prev {
+        left: 60px;
+        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
+
+        &:hover,
+        &:active {
+            background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
+        }
+
+        @include max-w($xl) {
+            left: 30px;
+        }
+    }
+
+    .slick-disabled {
+        background-color: $background;
+        opacity: 0.85;
+        cursor: default;
+
+        &:focus,
+        &:active {
+            border: none;
+        }
+    }
+
+    .slick-disabled.main-slider__next {
+        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
+    }
+
+    .slick-disabled.main-slider__prev {
+        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 100px;
+        font-size: 0;
+
+        @include max-w($xl) {
+            bottom: 15px;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            button {
+                width: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
+                height: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
+                background-color: $main;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $excretion;
+                }
+
+                &:active {
+                    opacity: 0.7;
+                }
+
+                &:focus {
+                    border: 2px solid $accent;
+                }
+            }
+        }
+
+        li.slick-active {
+            button {
+                background-color: $accent;
+            }
+        }
+    }
+}

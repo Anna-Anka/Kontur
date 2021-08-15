@@ -1,0 +1,51 @@
+.trainer {
+    background-color: $background;
+    padding: 100px 0;
+
+    @include max-w($xl) {
+        padding: 20px 0;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+
+        @include max-w($lg) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px 45px;
+
+        @include max-w($xl) {
+            gap: 20px 30px;
+        }
+
+        @include max-w($lg) {
+            gap: 18px;
+        }
+
+        @include max-w($md) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        max-width: 370px;
+        width: 100%;
+        background-color: $main;
+        border-radius: 15px 15px 0 0;
+
+        @include max-w($lg) {
+            max-width: 360px;
+        }
+    }
+}
+
+
+

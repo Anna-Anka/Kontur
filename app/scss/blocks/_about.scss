@@ -1,0 +1,221 @@
+.about {
+    background-color: $background;
+    padding: 0 0 100px;
+
+    @include max-w($xl) {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+
+        @include max-w($lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__top {
+        position: relative;
+        padding-top: 100px;
+        margin-bottom: 175px;
+
+        @include max-w($xl) {
+            margin-bottom: 80px;
+        }
+
+        @include max-w($lg) {
+            margin-bottom: 25px;
+            padding-top: 15px;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__text {
+       line-height: 1.9;
+       max-width: 710px;
+       font-family: $ibm;
+       font-weight: $fw-400;
+
+       @include max-w($xl) {
+           max-width: 550px;
+       }
+
+       @include max-w($lg) {
+           margin-bottom: 20px;
+           max-width: 650px;
+           line-height: 1.6;
+       }
+
+       @include max-w($md) {
+           margin-bottom: 10px;
+       }
+       
+       p {
+           &:not(:last-child) {
+               margin-bottom: 20px;
+
+               @include max-w($lg) {
+                   margin-bottom: 10px;
+               }
+           }
+       }
+    }
+
+    &__video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        bottom: -175px;
+        right: 0;
+        width: 39%;
+        margin-left: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s;
+
+        @include max-w($xl) {
+            width: 44%;
+            bottom: -100px;
+        }
+
+        @include max-w($lg) {
+            height: 37vw;
+            top: auto;
+            width: 100%;
+            background-position: center center;
+            left: 0;
+            bottom: auto;
+            position: relative;
+            background-attachment: fixed;
+        }
+
+        &::before {
+            @include blackout;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        &:hover::before {
+            opacity: 0.5;
+        }
+
+        &:active {
+            transform: scale(1.1);
+        }
+
+        &:focus {
+            border: 2px solid $accent;
+        }
+    }
+
+    &__icon {
+        @include adaptiv-value("width", 80, 45, 0);
+        @include adaptiv-value("height", 80, 45, 0);
+        fill: $main;
+        z-index: 5;
+        transition: fill 0.3s;
+
+        &:hover {
+            fill: $accent; 
+        }
+
+        &:active {
+            border: 1px solid $accent;
+        }
+
+        &:focus {
+            border: 1px solid $main;
+        }
+    }
+}
+
+.advantages {
+    padding-top: 50px;
+
+    @include max-w($lg) {
+        padding-top: 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
+
+        @include max-w($lg)  {
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        background-color: $main;
+        border-radius: 10px;
+        box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        padding: 30px 0 36px;
+        max-width: 324px;
+        width: 100%;
+
+        @include max-w($lg) {
+            padding: 15px 0 20px;
+        }
+    }
+
+    &__icon {
+        padding: 0 10px;
+        margin: 0 auto 17px;
+
+        @include max-w($lg) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__badge {
+        width: 40px;
+        height: 30px;
+        fill: $special;
+    }
+
+    &__body {
+        padding: 0 10px 0 32px;
+
+        @include max-w($lg) {
+            padding: 0 7px 0 20px;
+        }
+    }
+
+    &__name {
+        margin-bottom: 11px;
+        font-size: 23px;
+        line-height: 1.7;
+        font-family: $pac;
+        letter-spacing: 3px;
+        display: inline-block;
+
+        @include max-w($lg) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text {
+        max-width: 270px;
+        font-family: $ibm;
+        font-weight: $fw-400;
+        line-height: 1.4;
+
+        @include max-w($lg) {
+            max-width: 285px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,3187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Контур</title>
+</head>
+
+<body id="body">
+    
+    <header class="header" id="header">
+    <h1 class="visually-hidden">
+        КСК Контур - занятия конным спортом
+    </h1>
+    <div class="container">
+        <div class="header__content">
+            <nav class="header__inner">
+                <div class="header__top">
+                    <a class="logo header__logo" href="#footer">
+                        <span class="visually-hidden">
+                            По клику вы переместитесь вниз сайта
+                        </span>
+                        <img class="logo__img header__img" src="img/logo.png" alt="Логотип">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#services">
+                            Услуги
+                        </a>
+                        <button class="menu__btn" type="button">
+                            <span class="visually-hidden">
+                                По клику откроется дополнительное меню с нашими услугами
+                            </span>
+                            <svg class="menu__icon">
+                                <use xlink:href="img/sprite.svg#check-icon"></use>
+                            </svg>
+                        </button>
+
+                        <ul class="drop">
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-professional">
+                                    профессиональные занятия
+                                </a>
+                            </li>
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-classes">
+                                    занятия верховой ездой
+                                </a>
+                            </li>
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-walks">
+                                    прогулки и походы
+                                </a>
+                            </li>
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-photoshoot">
+                                    фотосессии с лошадьми
+                                </a>
+                            </li>
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-wait">
+                                    постой лошадей
+                                </a>
+                            </li>
+                            <li class="drop__item">
+                                <a class="drop__link" href="#services-events">
+                                    проведение мероприятий
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#reviews">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__phone" href="tel:+0140000199">
+                + 014 000 01 99
+            </a>
+            <button class="burger" type="button">
+                <span class="visually-hidden">
+                    По клику откроется мобильное меню
+                </span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="main-slider">
+    <span class="visually-hidden">
+        Начинается слайдер, в котором представлена часть наших услуг.
+    </span>
+    <ul class="main-slider__items">
+        <li class="main-slider__item" style="background-image: url('img/main-slider/1.jpg')">
+            <div class="container container--big">
+                <div class="main-slider__offer">
+                    <p class="main-slider__heading title">
+                        профессиональные занятия
+                    </p>
+                    <div class="main-slider__text">
+                        <p>
+                            Индивидуальные и групповые занятия конкуром/выездкой/вольтижировкой для детей и взрослых
+                        </p>
+                    </div>
+                    <a class="main-slider__link button" href="#services-professional">
+                        Узнать подробности
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="main-slider__item" style="background-image: url('img/main-slider/2.jpg')">
+            <div class="container container--big">
+                <div class="main-slider__offer">
+                    <p class="main-slider__heading title">
+                        походы и прогулки на лошадях
+                    </p>
+                    <div class="main-slider__text">
+                        <p>
+                            Прогулки и походы по живописным местам от нескольких часов до нескольких дней.
+                        </p>
+                    </div>
+                    <a class="main-slider__link button" href="#services-walks">
+                        Узнать подробности
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="main-slider__item" style="background-image: url('img/main-slider/3.jpg')">
+            <div class="container container--big">
+                <div class="main-slider__offer">
+                    <p class="main-slider__heading title">
+                        фотосессии с лошадьми
+                    </p>
+                    <div class="main-slider__text">
+                        <p>
+                            Наши профессиональные фотографы помогут запечатлеть лучшие моменты.
+                        </p>
+                    </div>
+                    <a class="main-slider__link button" href="#services-photoshoot">
+                        Узнать подробности
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="main-slider__item" style="background-image: url('img/main-slider/4.jpg')">
+            <div class="container container--big">
+                <div class="main-slider__offer">
+                    <p class="main-slider__heading title">
+                        организация экскурсий
+                    </p>
+                    <div class="main-slider__text">
+                        <p>
+                            Мы организовываем экскурсии на территорию нашего КСК для детей и взрослых
+                        </p>
+                    </div>
+                    <a class="main-slider__link button" href="#services-events">
+                        Узнать подробности
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="main-slider__item" style="background-image: url('img/main-slider/5.jpg')">
+            <div class="container container--big">
+                <div class="main-slider__offer">
+                    <p class="main-slider__heading title">
+                        постой лошадей
+                    </p>
+                    <div class="main-slider__text">
+                        <p>
+                            Аренда денников с самыми лушими условиями для ваших лошадей.
+                        </p>
+                    </div>
+                    <a class="main-slider__link button" href="#services-wait">
+                        Узнать подробности
+                    </a>
+                </div>
+            </div>
+        </li> 
+    </ul>
+</section>
+
+        <section class="about" id="about">
+    <div class="about__top">
+        <div class="container">
+            <h2 class="about__title title">
+                о нас
+            </h2>
+            <div class="about__text">
+                <p>
+                    Конноспортивный клуб "Контур" был основан в 1990 году и сразу стал пользоваться популярностью.
+                </p>
+                <p>
+                    На сегодняшний день наш КСК является одним из самых крупных и известных клубов
+                    в Московской области, на территории которого размещается около 100 голов.
+                </p>
+                <p>
+                    У клуба очень удачное месторасположение. Мы находимся недалеко от Москвы, поэтому вы сможете
+                    приехать к
+                    нам в любое удобное для вас время и насладиться великолепной природой.
+                </p>
+            </div>
+        </div>
+        <a class="about__video" data-fancybox href="https://www.youtube.com/watch?v=md4pg0eVRF0&feature=emb_logo" style="background-image: url('img/video.jpg');">
+            <span class="visually-hidden">
+                По клику откроется видео 
+            </span>
+            <svg class="about__icon">
+                <use xlink:href="img/sprite.svg#play-icon"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="container container--big">
+        <div class="advantages">
+            <ul class="advantages__items">
+                <li class="advantages__item">
+                    <div class="advantages__icon icon">
+                        <svg class="advantages__badge">
+                            <use xlink:href="img/sprite.svg#bus-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__body">
+                        <span class="advantages__name">
+                            Легко добраться
+                        </span>
+                        <div class="advantages__text">
+                            <p>
+                                В пяти минутах ходьбы
+                                от КСК находится автобусная остановка.
+                                Общественный транспорт ходит каждые 15 минут.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages__item">
+                    <div class="advantages__icon icon">
+                        <svg class="advantages__badge">
+                            <use xlink:href="img/sprite.svg#tree-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__body">
+                        <span class="advantages__name">
+                            Красивые виды
+                        </span>
+                        <div class="advantages__text">
+                            <p>
+                                Недалеко находится водоем, территорию КСК окружают поля и леса.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages__item">
+                    <div class="advantages__icon icon">
+                        <svg class="advantages__badge">
+                            <use xlink:href="img/sprite.svg#trainer-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__body">
+                        <span class="advantages__name">
+                            Лучшие тренеры
+                        </span>
+                        <div class="advantages__text">
+                            <p>
+                                В нашем клубе работают
+                                опытнае специалисты, у которых большой стаж
+                                в тренерской деятельности.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages__item">
+                    <div class="advantages__icon icon">
+                        <svg class="advantages__badge">
+                            <use xlink:href="img/sprite.svg#horse-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__body">
+                        <span class="advantages__name">
+                            Много лошадей
+                        </span>
+                        <div class="advantages__text">
+                            <p>
+                                В нашем КСК находится около 100 голов, мы сможем подобрать лошадь под ваш уровень.
+                                А для занятий с детьми есть пони.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="advantages__item">
+                    <div class="advantages__icon icon">
+                        <svg class="advantages__badge">
+                            <use xlink:href="img/sprite.svg#house-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="advantages__body">
+                        <span class="advantages__name">
+                            Хорошие условия
+                        </span>
+                        <div class="advantages__text">
+                            <p>
+                                Плохая погода не помешает занятиям, на территории есть 2 крытых манежа (40*20), 2 плаца
+                                (60*20) с хорошим грунтом и теплая раздевалка.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="gallery">
+    <div class="container">
+        <div class="gallery__inner">
+            <h2 class="gallery__title title">
+                галерея
+            </h2>
+            <span class="visually-hidden">
+                Начинается фильтр фотографий, кликнув по кнопке Вам будут доступны фотографии с выбранного события
+            </span>
+            <ul class="filter">
+                <li class="filter__item">
+                    <button class="filter__btn filter__btn--active category" type="button"
+                        data-filter=".category-cup">
+                        кубок гагрина
+                    </button>
+                </li>
+                <li class="filter__item">
+                    <button class="filter__btn category" type="button" data-filter=".category-area">
+                        чемпионат области
+                    </button>
+                </li>
+                <li class="filter__item">
+                    <button class="filter__btn category" type="button" data-filter=".category-festival">
+                        фестиваль 2020
+                    </button>
+                </li>
+            </ul>
+
+            <div class="gallery__content">
+                <span class="visually-hidden">
+                    Начинаются фотографии с выбранного события, кликнув по ссылке откроется фото
+                </span>
+                <ul class="gallery__show">
+                    <!--Кубок Гагарина-->
+                    <li class="gallery__item gallery__a mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/1.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/1.jpg" alt="Кубок Гагарина"> 
+                    </li>
+                    <li class="gallery__item gallery__b mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/2.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/2.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__c mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/3.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/3.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/4.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/4.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/5.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/5.jpg" alt="Кубок Гагарина">
+                    </li>
+
+                    <!--Чемпионат области-->
+                    <li class="gallery__item gallery__a mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/1.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/1.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__b mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/2.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/2.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__c mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/3.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/3.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/4.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/4.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/5.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/5.jpg" alt="Чемпионат области">
+                    </li>
+
+                    <!--Фестиваль 2020-->
+                    <li class="gallery__item gallery__a mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/1.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/1.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__b mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/2.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/2.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__c mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/3.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/3.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/4.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/4.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/5.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/5.jpg" alt="Фестиваль 2020">
+                    </li>
+                </ul>
+
+                <ul class="gallery__noshow">
+                    <!--Кубок Гагарина-->
+                    <li class="gallery__item gallery__c mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/6.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/6.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/7.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/7.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/8.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/8.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__a mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/9.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/9.jpg" alt="Кубок Гагарина">
+                    </li>
+                    <li class="gallery__item gallery__b mix category-cup">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/10.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/cup/10.jpg" alt="Кубок Гагарина">
+                    </li>
+
+                    <!--Чемпионат области-->
+                    <li class="gallery__item gallery__c mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/6.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/6.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/7.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/7.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/8.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/8.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__a mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/9.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/9.jpg" alt="Чемпионат области">
+                    </li>
+                    <li class="gallery__item gallery__b mix category-area">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/10.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/area/10.jpg" alt="Чемпионат области">
+                    </li>
+
+                    <!--Фестиваль 2020-->
+                    <li class="gallery__item gallery__c mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/6.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/6.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__d mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/7.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/7.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__e mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/8.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/8.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__a mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/9.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/9.jpg" alt="Фестиваль 2020">
+                    </li>
+                    <li class="gallery__item gallery__b mix category-festival">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/10.jpg"></a>
+                        <img class="gallery__img" src="img/gallery/festival/10.jpg" alt="Фестиваль 2020">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="gallery__bottom">
+                <button class="gallery__button button" type="button">
+                    Показать еще
+                </button>
+                <p class="gallery__more">
+                    Больше фотографий в
+                    <a class="gallery__href" href="https://vk.com" target="blank">
+                        ВКонтакте
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="trainer section">
+    <div class="container">
+        <h2 class="trainer__title title">
+            наши тренеры
+        </h2>
+
+        <ul class="trainer__items">
+            <!--Тренер по конкуру-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/1.jpg" alt="Михайлов Сергей Петрович">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Тренер по конкуру
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Михайлов</span>
+                            Сергей Петрович
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                Мастер спорта
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Чемпион России 2018
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 10 лет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Сергея Петровича
+                        </span>
+                        <ul class="social trainer-card__social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Сергея Петровича в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Сергея Петровича в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Сергея Петровича в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+
+            <!--Тренер по выездке-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/2.jpg" alt="Иванова Полина Александровна">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Тренер по выездке
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Иванова</span>
+                            Полина Александровна
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                Мастер спорта
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Чемпионка России 2018
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 10 лет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Полины Александровны
+                        </span>
+                        <ul class="social trainer-card__social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Полины Александровны в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Полины Александровны в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Полины Александровны в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+
+            <!--Детский тренер-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/3.jpg" alt="Володина Ольга Викторовна">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Детский тренер
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Володина</span>
+                            Ольга Викторовна
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                КМС по выездке
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 5 лет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Ольги Викторовны
+                        </span>
+                        <ul class="social trainer-card__social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ольги Викторовны в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ольги Викторовны в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ольги Викторовны в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+
+            <!--Тренер по троеборью-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/4.jpg" alt="Баланов Валерий Денисович">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Тренер по троеборью
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Баланов</span>
+                            Валерий Денисович
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                Мастер спорта
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Чемпион Европы 2015
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 7 лет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Валерия Денисовича
+                        </span>
+                        <ul class="social trainer-card__social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Валерия Денисовича в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Валерия Денисовича в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Валерия Денисовича в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+
+            <!--Тренер по вольтижировке-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/5.jpg" alt="Васильева Лариса Анатольевна">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Тренер по вольтижировке
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Васильева</span>
+                            Лариса Анатольевна
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                Мастер спорта
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Работала в Германии
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 4 года
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Ларисы Анатольевны
+                        </span>
+                        <ul class="trainer-card__social social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+
+            <!--Инструктор-->
+            <li class="trainer__item">
+                <article class="trainer-card">
+                    <div class="trainer-card__top">
+                        <img class="trainer-card__img" src="img/trainers/6.jpg" alt="Иванова Марина Сергеевна">
+                        <div class="trainer-card__table">
+                            <span class="trainer-card__profession">
+                                Инструктор
+                            </span>
+                        </div>
+                    </div>
+                    <div class="trainer-card__body">
+                        <p class="trainer-card__name">
+                            <span>Иванова</span>
+                            Марина Сергеевна
+                        </p>
+                        <ul class="trainer-card__achievements">
+                            <li class="trainer-card__achievement">
+                                КМС по конкуру
+                            </li>
+                            <li class="trainer-card__achievement">
+                                Тренерский стаж - 6 лет
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trainer-card__footer">
+                        <span class="visually-hidden">
+                            Здесь представлены социальные сети Марины Сергеевны
+                        </span>
+                        <ul class="trainer-card__social social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Марины Сергеевныы в социальной сети "Vkontacte"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Марины Сергеевныы в социальной сети "Instagram"
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                    <span class="visually-hidden">
+                                        По клику откроется страница Марины Сергеевныы в социальной сети "Facebook"
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services__title title">
+                    наши услуги
+                </h2>
+                <div class="services__item services__item--active services-professional" id="services-professional">
+    <div class="services-top">
+        <div class="services-top__picture" style="background-image: url('img/services/professional.jpg');">
+        </div>
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                профессиональные занятия
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Наш конноспортивный клуб “Контур” предлагает Вам индивидуальные и групповые занятия конным
+                    спортом для взрослых и детей с 12 лет по конкуру, выездке, троеборью, вольтижировке с
+                    опытными
+                    тренерами.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__professional">
+                Записаться на занятие
+            </a>
+        </div>
+    </div>
+
+    <div class="services__body">
+        <ul class="services-adventages">
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#age-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Для взрослых и детей с 12 лет
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#group-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Групповые и индивидульные занятия
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#time-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Продолжительность занятий - 1 час
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#subscription-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Покупка абонемента от 5 занятий
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__item services-adventages__item--solo">
+                <div class="services-adventages__icon icon">
+                    <svg class="services-adventages__badge">
+                        <use xlink:href="img/sprite.svg#present-icon"></use>
+                    </svg>
+                </div>
+                <p class="services-adventages__text">
+                    Покупка подарочного сертификата (с неограниченным сроком действия)
+                </p>
+            </li>
+        </ul>
+
+        <div class="services-bottom">
+            <div class="services-bottom__price">
+                <div class="services-bottom__bg" style="background-image: url('../img/services/table-bg1.jpg');">
+                </div>
+                <table class="services-table">
+                    <tr class="services-table__list">
+                        <th></th>
+                        <th class="services-table__category">
+                            Групповые
+                        </th>
+                        <th class="services-table__category">
+                            Индивидуальные
+                        </th>
+                    </tr>
+                    <tr class="services-table__list">
+                        <th class="services-table__category">
+                            Занятия
+                        </th>
+                        <td class="services-table__item">
+                            1000 рублей
+                        </td>
+                        <td class="services-table__item">
+                            1500 рублей
+                        </td>
+                    </tr>
+                    <tr class="services-table__list">
+                        <th class="services-table__category">
+                            Абонемент*
+                        </th>
+                        <td class="services-table__item">
+                            700 рублей
+                        </td>
+                        <td class="services-table__item">
+                            1200 рублей
+                        </td>
+                    </tr>
+                </table>
+
+                <ul class="services-mobail">
+                    <li class="services-mobail__list">
+                        <span class="services-mobail__category">
+                            Занятия
+                        </span>
+                        <ul class="services-mobail__items">
+                            <li class="services-mobail__item">
+                                Групповые - 1000 руб.
+                            </li>
+                            <li class="services-mobail__item">
+                                Индивидуальные - 1500 руб.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="services-mobail__list">
+                        <span class="services-mobail__category">
+                            Абонемент*
+                        </span>
+                        <ul class="services-mobail__items">
+                            <li class="services-mobail__item">
+                                Групповой - 700 руб.
+                            </li>
+                            <li class="services-mobail__item">
+                                Индивидуальный - 1200 руб.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <p class="services-bottom__text">
+                *Цена указана за 1 занятие, абонемент покупается минимум на 5 занятий.
+            </p>
+        </div>
+        <p class="services-mobail__footnote">
+            *Цена указана за 1 занятие, абонемент покупается минимум на 5 занятий.
+        </p>
+
+        <div class="services-tabs" id="services-tabs__professional">
+            <span class="visually-hidden">
+                Выберите, что Вы хотите приобрести
+            </span>
+            <ul class="services-tabs__items">
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link services-tabs__link--active category" href="#services-tabs__professional-1">
+                        Занятия
+                    </a>
+                </li>
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link category" href="#services-tabs__professional-2">
+                        Абонемент
+                    </a>
+                </li>
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link category" href="#services-tabs__professional-3">
+                        Сертификат
+                    </a>
+                </li>
+            </ul>
+
+            <!--Занятия-->
+            <div class="services-tabs__body services-tabs__body--active" id="services-tabs__professional-1">
+                <form class="form" name="services-professional-1">
+                    <p class="form__heading">
+                        заполните форму для записи на занятие
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__name-1">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-professional__name-1" name="services-professional__name-1" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__phone-1">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-professional__phone-1" name="services-professional__phone-1" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__email-1">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-professional__email-1" name="services-professional__email-1" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__item form__item--big">
+                        <select class="form__select" name="services-professional__select-1">
+                            <option disabled selected>Какоке направление Вы выбрали?</option>
+                            <option value="Конкур">Конкур</option>
+                            <option value="Выездка">Выездка</option>
+                            <option value="Троеборье">Троеборье</option>
+                            <option value="Вольтижировка">Вольтижировка</option>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#calendar-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__calendar">
+                                Выберите дату для занятий
+                            </label>
+                            <input class="form__input form__calendar" name="services-professional__calendar" type="text" placeholder="Выберите дату" id="services-professional__calendar">
+                        </div>
+                        <div class="form__item">
+                            <select class="form__select form__time" name="services-professional__time">
+                                <option disabled selected>Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__textarea-1">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-professional__textarea-1" name="services-professional__textarea-1" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-professional__agreement-1">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-professional__agreement-1">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+
+            <!--Абонемент-->
+            <div class="services-tabs__body" id="services-tabs__professional-2">
+                <form class="form" name="services-professional-2">
+                    <p class="form__heading">
+                        заполните форму для покупки абонемента
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__name-2">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-professional__name-2" name="services-professional__name-2" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__phone-2">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-professional__phone-2" name="services-professional__phone-2" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__email-2">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-professional__email-2" name="services-professional__email-2" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--amount">
+                        <div class="form__item">
+                            <select class="form__select" name="services-professional__select-2">
+                                <option disabled selected>Какоке направление Вы выбрали?</option>
+                                <option value="Конкур">Конкур</option>
+                                <option value="Выездка">Выездка</option>
+                                <option value="Троеборье">Троеборье</option>
+                                <option value="Вольтижировка">Вольтижировка</option>
+                            </select>
+                        </div>
+                        <div class="form__input form__item form__amount">
+                            <label class="form__label" for="services-professional__number-2">
+                                На сколько занятий?
+                            </label>
+                            <input class="form__number" type="number" min="5" value="5" id="services-professional__number-2" name="services-professional__number-2">
+                        </div>
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__textarea-2">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-professional__textarea-2" name="services-professional__textarea-2" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox"
+                            id="services-professional__agreement-2">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-professional__agreement-2">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+
+            <!--Сертификат-->
+            <div class="services-tabs__body" id="services-tabs__professional-3">
+                <form class="form" name="services-professional-3">
+                    <p class="form__heading">
+                        заполните форму для покупки сертификата
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__name-3">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-professional__name-3" name="services-professional__name-3" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__phone-3">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-professional__phone-3" name="services-professional__phone-3" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-professional__email-3">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-professional__email-3" name="services-professional__email-3" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__group form__group--amount">
+                        <div class="form__item">
+                            <select class="form__select" name="services-professional__select-3">
+                                <option disabled selected>Какоке направление Вы выбрали?</option>
+                                <option value="Конкур">Конкур</option>
+                                <option value="Выездка">Выездка</option>
+                                <option value="Троеборье">Троеборье</option>
+                                <option value="Вольтижировка">Вольтижировка</option>
+                            </select>
+                        </div>
+                        <div class="form__input form__item form__amount">
+                            <label class="form__label" for="services-professional__number-3">
+                                На сколько занятий?
+                            </label>
+                            <input class="form__number" type="number" min="5" value="5" id="services-professional__number-3" name="services-professional__number-3">
+                        </div>
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-professional__textarea-3">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-professional__textarea-3" name="services-professional__textarea-3" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-professional__agreement-3">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-professional__agreement-3">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="services__item services__item--active services-classes" id="services-classes">
+    <div class="services-top">
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                занятия верховой ездой
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    В нашем конноспортивном клубе мы проводим занятия по верховой езде. На таких тренировках вы
+                    научитесь уверенно сидеть в седле и управлять лошадью на всех аллюрах.
+                </p>
+                <p>
+                    Заниматься можно взрослым и детям с 7 лет, для детей у нас есть пони клуб. Если Вы не хотите
+                    идти в профессиональный спорт, то такие занятия как раз для вас.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__classes">
+                Записаться на занятие
+            </a>
+        </div>
+        <div class="services-top__picture" style="background-image: url('img/services/classes.jpg');">
+        </div>
+    </div>
+
+    <div class="services__body">
+        <ul class="services-adventages">
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#age2-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Для взрослых и детей с 7 лет
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#group-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Групповые и индивидульные занятия
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#time-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Продолжительность занятий - 1 час
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#subscription-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Покупка абонемента от 5 занятий
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__item services-adventages__item--solo">
+                <div class="services-adventages__icon icon">
+                    <svg class="services-adventages__badge">
+                        <use xlink:href="img/sprite.svg#present-icon"></use>
+                    </svg>
+                </div>
+                <p class="services-adventages__text">
+                    Покупка подарочного сертификата (с неограниченным сроком действия )
+                </p>
+            </li>
+        </ul>
+
+        <div class="services-bottom">
+            <div class="services-bottom__price">
+                <div class="services-bottom__bg" style="background-image: url('../img/services/table-bg2.jpg');">
+                </div>
+                <table class="services-table">
+                    <tr class="services-table__list">
+                        <th></th>
+                        <th class="services-table__category">
+                            Групповые
+                        </th>
+                        <th class="services-table__category">
+                            Индивидуальные
+                        </th>
+                    </tr>
+                    <tr class="services-table__list">
+                        <th class="services-table__category">
+                            Занятия
+                        </th>
+                        <td class="services-table__item">
+                            650 рублей
+                        </td>
+                        <td class="services-table__item">
+                            1000 рублей
+                        </td>
+                    </tr>
+                    <tr class="services-table__list">
+                        <th class="services-table__category">
+                            Абонемент*
+                        </th>
+                        <td class="services-table__item">
+                            500 рублей
+                        </td>
+                        <td class="services-table__item">
+                            800 рублей
+                        </td>
+                    </tr>
+                </table>
+
+                <ul class="services-mobail">
+                    <li class="services-mobail__list">
+                        <span class="services-mobail__category">
+                            Занятия
+                        </span>
+                        <ul class="services-mobail__items">
+                            <li class="services-mobail__item">
+                                Групповые - 650 руб.
+                            </li>
+                            <li class="services-mobail__item">
+                                Индивидуальные - 1000 руб.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="services-mobail__list">
+                        <span class="services-mobail__category">
+                            Абонемент*
+                        </span>
+                        <ul class="services-mobail__items">
+                            <li class="services-mobail__item">
+                                Групповой - 500 руб.
+                            </li>
+                            <li class="services-mobail__item">
+                                Индивидуальный - 800 руб.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <p class="services-bottom__text">
+                *Цена указана за 1 занятие, абонемент покупается минимум на 5 занятий.
+            </p>
+        </div>
+        <p class="services-mobail__footnote">
+            *Цена указана за 1 занятие, абонемент покупается минимум на 5 занятий.
+        </p>
+
+        <div class="services-tabs" id="services-tabs__classes">
+            <span class="visually-hidden">
+                Выберите, что Вы хотите приобрести
+            </span>
+            <ul class="services-tabs__items">
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link services-tabs__link--active category"
+                        href="#services-tabs__classes-1">
+                        Занятия
+                    </a>
+                </li>
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link category" href="#services-tabs__classes-2">
+                        Абонемент
+                    </a>
+                </li>
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link category" href="#services-tabs__classes-3">
+                        Сертификат
+                    </a>
+                </li>
+            </ul>
+
+            <!--Занятие-->
+            <div class="services-tabs__body services-tabs__body--active" id="services-tabs__classes-1">
+                <form class="form" name="services-classes-1">
+                    <p class="form__heading">
+                        заполните форму для записи на занятие
+                    </p>
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__name-1">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-classes__name-1" name="services-classes__name-1" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__phone-1">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-classes__phone-1" name="services-classes__phone-1" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__email-1">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-classes__email-1" name="services-classes__email-1" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#calendar-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__calendar">
+                                Выберите дату для занятий
+                            </label>
+                            <input class="form__input form__calendar" type="text" id="services-classes__calendar" name="services-classes__calendar" placeholder="Выберите дату">
+                        </div>
+                        <div class="form__item">
+                            <select class="form__select form__time" name="services-classes__time">
+                                <option disabled selected>Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__textarea-1">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-classes__textarea-1" name="services-classes__textarea-1" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-classes__agreement-1">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-classes__agreement-1">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+
+            <!--Абонемент-->
+            <div class="services-tabs__body" id="services-tabs__classes-2">
+                <form class="form" name="services-classes-2">
+                    <p class="form__heading">
+                        заполните форму для покупки абонемента
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__name-2">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-classes__name-2" name="services-classes__name-2" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__phone-2">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-classes__phone-2" name="services-classes__phone-2" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__email-2">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-classes__email-2" name="services-classes__email-2" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__input form__item form__item--big form__amount">
+                        <label class="form__label" for="services-classes__number-2">
+                            На сколько занятий?
+                        </label>
+                        <input class="form__number" type="number" min="5" value="5" id="services-classes__number-2" name="services-classes__number-2">
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__textarea-2">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-classes__textarea-2" name="services-classes__textarea-2" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-classes__agreement-2">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-classes__agreement-2">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+
+            <!--Сертификат-->
+            <div class="services-tabs__body" id="services-tabs__classes-3">
+                <form class="form" name="services-classes-3">
+                    <p class="form__heading">
+                        заполните форму для покупки сертификата
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#email-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__name-3">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-classes__name-3" name="services-classes__name-3" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__phone-3">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-classes__phone-3" name="services-classes__phone-3" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-classes__email-3">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-classes__email-3" name="services-classes__email-3" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__input form__item form__item--big form__amount">
+                        <label class="form__label" for="services-classes__number-3">
+                            На сколько занятий?
+                        </label>
+                        <input class="form__number" type="number" min="5" value="5" id="services-classes__number-3"  name="services-classes__number-3">
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-classes__textarea-3">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-classes__textarea-3" name="services-classes__textarea-3" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-classes__agreement-3">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-classes__agreement-3">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="services__item services__item--active services-walks" id="services-walks">
+    <div class="services-top">
+        <div class="services-top__picture" style="background-image: url('img/services/walk.jpg');"></div>
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                прогулки и походы
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Мы можем предложить Вам прогулки от нескольких часов до походов на несколько суток с
+                    опытными инструкторами.
+                </p>
+                <p>
+                    В поход мы предоставляем палатки и воду, Вам нужно взять теплую одежду и еду. Все вещи мы
+                    отвозим на место ночлега.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__walks">
+                Записаться
+            </a>
+        </div>
+    </div>
+
+    <div class="services__body">
+        <ul class="services-prices">
+            <li class="services-prices__list">
+                <div class="services-prices__bg" style="background-image: url('img/services/walks-bg.jpg');"></div>
+                <article class="pricing-card">
+                    <span class="pricing-card__name category">
+                        прогулки
+                    </span>
+                    <ul class="pricing-card__items">
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#age2-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Взрослые и дети с 7 лет
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#time-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Продолжительность от 1 часа
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#tree-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                По самым красивым местам
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#trainer-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Опытные инструктора
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__cost">
+                            1000 руб/час
+                        </span>
+                    </div>
+                </article>
+            </li>
+            <li class="services-prices__list">
+                <div class="services-prices__bg" style="background-image: url('img/services/hiking-bg.jpg');"></div>
+                <article class="pricing-card">
+                    <span class="pricing-card__name category">
+                        походы
+                    </span>
+                    <ul class="pricing-card__items">
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#age-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Взрослые и дети с 12 лет
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#time-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Продолжительность от 24 часов
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#tree-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                По самым красивым местам
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#trainer-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Опытные инструктора
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#map-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Заранее продумываем маршрут
+                            </p>
+                        </li>
+                        <li class="pricing-card__item">
+                            <div class="pricing-card__icon icon">
+                                <svg class="pricing-card__badge badge">
+                                    <use xlink:href="img/sprite.svg#car-icon"></use>
+                                </svg>
+                            </div>
+                            <p class="pricing-card__text">
+                                Доставляем все вещи на ночлег
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="pricing-card__price">
+                        <span class="pricing-card__cost">
+                            4000 руб/сутки
+                        </span>
+                    </div>
+                </article>
+            </li>
+        </ul>
+
+        <div class="services-tabs" id="services-tabs__walks">
+            <span class="visually-hidden">
+                Выберите, что Вы хотите приобрести
+            </span>
+            <ul class="services-tabs__items">
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link services-tabs__link--active category" href="#services-tabs__walks-1">
+                        прогулки
+                    </a>
+                </li>
+                <li class="services-tabs__item">
+                    <a class="services-tabs__link category" href="#services-tabs__walks-2">
+                        походы
+                    </a>
+                </li>
+            </ul>
+
+            <!--Прогулки-->
+            <div class="services-tabs__body services-tabs__body--active" id="services-tabs__walks-1">
+                <form class="form" name="services-walks-1">
+                    <p class="form__heading">
+                        заполните форму для записи на конную прогулку
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-walks__name-1">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-walks__name-1" name="services-walks__name-1" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__phone-1">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-walks__phone-1" name="services-walks__phone-1" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__email-1">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-walks__email-1" name="services-walks__email-1" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#calendar-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__calendar-1">
+                                Выберите дату для прогулки
+                            </label>
+                            <input class="form__input form__calendar" type="text" placeholder="Выберите дату" id="services-walks__calendar-1" name="services-walks__calendar-1">
+                        </div>
+                        <div class="form__item">
+                            <select class="form__select form__time" name="services-walks__time-1">
+                                <option disabled selected>Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__input form__item form__item--big form__amount">
+                        <label class="form__label" for="services-walks__number-1">
+                            Выберите продолжительность прогулки
+                        </label>
+                        <input class="form__number" type="number" min="1" value="1" id="services-walks__number-1" name="services-walks__number">
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-walks__textarea-1">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-walks__textarea-1" name="services-walks__textarea-1" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-walks__agreement-1">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-walks__agreement-1">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+
+            <!--Походы-->
+            <div class="services-tabs__body" id="services-tabs__walks-2">
+                <form class="form" name="services-walks-2">
+                    <p class="form__heading">
+                        заполните форму для записи на конный поход
+                    </p>
+
+                    <div class="form__item form__item--big">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#name-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-walks__name-2">
+                            Введите Ваше имя
+                        </label>
+                        <input class="form__input form__req" type="text" id="services-walks__name-2" name="services-walks__name-2" placeholder="Ваше имя*">
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#phone-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__phone-2">
+                                Введите Ваш номер телефона
+                            </label>
+                            <input class="form__input form__req" type="tel" id="services-walks__phone-2" name="services-walks__phone-2" placeholder="Ваш номер телефона*">
+                        </div>
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#email-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__email-2">
+                                Введите Ваш e-mail
+                            </label>
+                            <input class="form__input form__req form__email" type="text" id="services-walks__email-2" name="services-walks__email-2" placeholder="Ваш e-mail*">
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__item">
+                            <svg class="form__icon">
+                                <use xlink:href="img/sprite.svg#calendar-icon"></use>
+                            </svg>
+                            <label class="visually-hidden" for="services-walks__calendar-2">
+                                Выберите дату для похода
+                            </label>
+                            <input class="form__input form__calendar" type="text" placeholder="Выберите дату" id="services-walks__calendar-2" name="services-walks__calendar-2">
+                        </div>
+                        <div class="form__item">
+                            <select class="form__select form__time" name="services-walks__time-2">
+                                <option disabled selected>Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form__input form__item form__item--big form__amount">
+                        <label class="form__label" for="services-walks__number-2">
+                            Выберите продолжительность похода
+                        </label>
+                        <input class="form__number" type="number" min="1" value="1" id="services-walks__number-2" name="services-walks__number-2">
+                    </div>
+
+                    <div class="form__item form__item--big form__message">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-walks__textarea-2">
+                            Введите Ваше сообщение
+                        </label>
+                        <textarea class="form__textarea form__input" id="services-walks__textarea-2" placeholder="Ваше сообщение" name="services-walks__textarea-2"></textarea>
+                    </div>
+
+                    <div class="form__agreement">
+                        <input class="form__input form__check form__req check" type="checkbox" id="services-walks__agreement-2">
+                        <span class="form__styler form__req styler"></span>
+                        <label class="form__label form__label--agreement" for="services-walks__agreement-2">
+                            Даю согласие на обработку
+                        </label>
+                        <a class="form__link" href="#">
+                            персональных данных
+                        </a>
+                    </div>
+
+                    <button class="button form__button" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="services__item services__item--active services-photoshoot" id="services-photoshoot">
+    <div class="services-top services-top--slider">
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                фотосессии с лошадьми
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Наши профессиональные фотографы помогут Вам в создание образа. После фотосессии специалисты
+                    обработают все фотографии по вашему желанию.
+                </p>
+                <p>
+                    Мы проводим фотосесии как на территории конюшни, так и за её пределами, и с удовольствием
+                    подскажем самые красивые места
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__photoshoot">
+                Записаться на фотосессию
+            </a>
+        </div>
+        <ul class="services-top__picture services-slider">
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/photoshoot-slider2.jpg" alt="Фотосессии с лошадьми">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/photoshoot-bg.jpg" alt="Фотосессии с лошадьми">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/photoshoot.jpg" alt="Фотосессии с лошадьми">
+            </li>
+        </ul>
+    </div>
+
+    <div class="services__body">
+        <ul class="services-adventages">
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#age3-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Фотосессии с детьми
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#time-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Продолжительность от 1 часа
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#dress-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Помощь в создание образа
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#photo-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Обработка фотографий включена в стоимость
+                        </p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="services-adventages__item services-adventages__item--solo">
+                <div class="services-adventages__icon icon">
+                    <svg class="services-adventages__badge">
+                        <use xlink:href="img/sprite.svg#price-icon"></use>
+                    </svg>
+                </div>
+                <p class="services-adventages__text">
+                    Цена - 2000 рублей в час
+                </p>
+            </li>
+        </ul>
+
+        <div class="services-tabs" id="services-tabs__photoshoot">
+            <form class="form" name="services-photoshoot">
+                <p class="form__heading">
+                    заполните форму для записи на фотосессию
+                </p>
+                <div class="form__item form__item--big">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#name-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-photoshoot__name">
+                        Введите Ваше имя
+                    </label>
+                    <input class="form__input form__req" type="text" id="services-photoshoot__name" name="services-photoshoot__name" placeholder="Ваше имя*">
+                </div>
+
+                <div class="form__group">
+                    <div class="form__item">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#phone-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-photoshoot__phone">
+                            Введите Ваш номер телефона
+                        </label>
+                        <input class="form__input form__req" type="tel" id="services-photoshoot__phone" name="services-photoshoot__phone" placeholder="Ваше номер телефона*">
+                    </div>
+                    <div class="form__item">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#email-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-photoshoot__email">
+                            Введите Ваш e-mail
+                        </label>
+                        <input class="form__input form__req form__email" type="text" id="services-photoshoot__email" name="services-photoshoot__email" placeholder="Ваш e-mail*">
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <div class="form__item">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#calendar-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-photoshoot__calendar">
+                            Выберите дату для фотосессии
+                        </label>
+                        <input class="form__input form__calendar" type="text" placeholder="Выберите дату" id="services-photoshoot__calendar" name="services-photoshoot__calendar">
+                    </div>
+                    <div class="form__item">
+                        <select class="form__select form__time" name="services-photoshoot__time">
+                            <option disabled selected>Выберите время</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__item form__item--big form__message">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-photoshoot__textarea">
+                        Введите Ваше сообщение
+                    </label>
+                    <textarea class="form__textarea form__input" id="services-photoshoot__textarea" name="services-photoshoot__textarea" placeholder="Ваше сообщение"></textarea>
+                </div>
+
+                <div class="form__agreement">
+                    <input class="form__input form__check form__req check" type="checkbox" id="services-photoshoot__agreement">
+                    <span class="form__styler form__req styler"></span>
+                    <label class="form__label form__label--agreement" for="services-photoshoot__agreement">
+                        Даю согласие на обработку
+                    </label>
+                    <a class="form__link" href="#">
+                        персональных данных
+                    </a>
+                </div>
+
+                <button class="button form__button" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+                <div class="services__item services__item--active services-wait" id="services-wait">
+    <div class="services-top services-top--slider">
+        <ul class="services-top__picture services-slider">
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/wait-slider1.jpg" alt="постой лошадей">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/wait-slider2.jpg" alt="постой лошадей">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/wait-slider3.jpg" alt="постой лошадей">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/wait-slider4.jpg" alt="постой лошадей">
+            </li>
+            <li class="services-slider__item">
+                <img class="services-top__img services-slider__img" src="img/services/wait-slider5.jpg" alt="постой лошадей">
+            </li>
+        </ul>
+        
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                постой лошадей
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Мы предлагаем постой лошадей в КСК "Контур".
+                    Цена аренды в месяц - 20.000 рублей. В аренду входят услуги коваля и ветеринара, питание,
+                    прогулки и многое другое. Есть возможность изменить условия для Вашего питомца, учитывая
+                    пожелания.
+                </p>
+                <p>
+                    Если вы хотите забронировать денник или узнать какие-то подробности, то заполните
+                    <a class="services-top__href" href="#services-tabs__wait">
+                        форму ниже
+                    </a>.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__wait">
+                Забронировать
+            </a>
+        </div>
+    </div>
+
+    <div class="services__body">
+        <ul class="services-adventages">
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#hay-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Кормление 6 раз в день (3 раза сено и 3 раза овес)
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#field-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Прогулки от 4 часов в день
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="services-adventages__list">
+                <ul class="services-adventages__items">
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#doctor-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Услуги коваля и ветеринара
+                        </p>
+                    </li>
+                    <li class="services-adventages__item">
+                        <div class="services-adventages__icon icon">
+                            <svg class="services-adventages__badge">
+                                <use xlink:href="img/sprite.svg#stable-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="services-adventages__text">
+                            Отапливаемая конюшня, денник 4на4, горячая вода.
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="services-tabs" id="services-tabs__wait">
+            <form class="form" name="services-wait">
+                <p class="form__heading">
+                    заполните форму
+                </p>
+
+                <div class="form__item form__item--big">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#name-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-wait__name">
+                        Введите Ваше имя
+                    </label>
+                    <input class="form__input form__req" type="text" id="services-wait__name" name="services-wait__name" placeholder="Ваше имя*">
+                </div>
+
+                <div class="form__group">
+                    <div class="form__item">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#phone-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-wait__phone">
+                            Введите Ваш номер телефона
+                        </label>
+                        <input class="form__input form__req" type="tel" id="services-wait__phone" name="services-wait__phone" placeholder="Ваш номер телефона*">
+                    </div>
+                    <div class="form__item">
+                        <svg class="form__icon">
+                            <use xlink:href="img/sprite.svg#email-icon"></use>
+                        </svg>
+                        <label class="visually-hidden" for="services-wait__email">
+                            Введите Ваш e-mail
+                        </label>
+                        <input class="form__input form__req form__email" type="text" id="services-wait__email" name="services-wait__email" placeholder="Ваш e-mail*">
+                    </div>
+                </div>
+
+                <div class="form__item form__item--big form__message">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-wait__textarea">
+                        Введите Ваше сообщение
+                    </label>
+                    <textarea class="form__textarea form__input" id="services-wait__textarea" name="services-wait__textarea" placeholder="Ваше сообщение"></textarea>
+                </div>
+
+                <div class="form__agreement">
+                    <input class="form__input form__check form__req check" type="checkbox" id="services-wait__agreement">
+                    <span class="form__styler form__req styler"></span>
+                    <label class="form__label form__label--agreement" for="services-wait__agreement">
+                        Даю согласие на обработку
+                    </label>
+                    <a class="form__link" href="#">
+                        персональных данных
+                    </a>
+                </div>
+
+                <button class="button form__button" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+                <div class="services__item services__item--active services-events" id="services-events">
+    <div class="services-top">
+        <div class="services-top__descr">
+            <h3 class="services-top__headding">
+                организация мероприятий
+            </h3>
+            <div class="services-top__text">
+                <p>
+                    Для взрослых и детей с 5 лет мы проводим экскурсии в наш конноспортивный клуб. В такое
+                    мероприятие входит: экскурсия по территории кск, обед, просмотр тренировки, урок верховой
+                    езды. Эта предварительная программа. Все детали обговариваются индивидуально.
+                </p>
+                <p>
+                    Мы проводим и другие мероприятия: фестивали, открытые тренировки, мастер классы, организуем
+                    детские праздники. Остались вопросы? Заполните 
+                    <a class="services-top__href" href="#services-tabs__events">
+                        форму ниже
+                    </a>.
+                </p>
+            </div>
+            <a class="services-top__link button" href="#services-tabs__events">
+                Забронировать
+            </a>
+        </div>
+        <div class="services-top__picture" style="background-image: url('img/services/events.jpg');"></div>
+    </div>
+
+    <div class="services__body">
+        <div class="services-tabs" id="services-tabs__events">
+        <form class="form" name="services-events">
+            <p class="form__heading">
+                заполните форму
+            </p>
+
+            <div class="form__item form__item--big">
+                <svg class="form__icon">
+                    <use xlink:href="img/sprite.svg#name-icon"></use>
+                </svg>
+                <label class="visually-hidden" for="services-events__name">
+                    Введите Ваше имя
+                </label>
+                <input class="form__input form__req" type="text" id="services-events__name" name="services-events__name" placeholder="Ваше имя*">
+            </div>
+
+            <div class="form__group">
+                <div class="form__item">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-events__phone">
+                        Введите Ваш номер телефона
+                    </label>
+                    <input class="form__input form__req" type="tel" id="services-events__phone" name="services-events__phone" placeholder="Ваш номер телефона*">
+                </div>
+                <div class="form__item">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="services-events__email">
+                        Введите Ваш e-mail
+                    </label>
+                    <input class="form__input form__req form__email" type="text" id="services-events__email" name="services-events__email" placeholder="Ваш e-mail*">
+                </div>
+            </div>
+
+            <div class="form__item form__item--big form__message">
+                <svg class="form__icon">
+                    <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                </svg>
+                <label class="visually-hidden" for="services-events__textarea">
+                    Введите Ваше сообщение
+                </label>
+                <textarea class="form__textarea form__input" id="services-events__textarea" name="services-events__textarea" placeholder="Ваше сообщение"></textarea>
+            </div>
+
+            <div class="form__agreement">
+                <input class="form__input form__check form__req check" type="checkbox" id="services-events__agreement">
+                <span class="form__styler form__req styler"></span>
+                <label class="form__label form__label--agreement" for="services-events__agreement">
+                    Даю согласие на обработку
+                </label>
+                <a class="form__link" href="#">
+                    персональных данных
+                </a>
+            </div>
+            
+            <button class="button form__button" type="submit">
+                Отправить
+            </button>
+        </form>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+        
+        <section class="reviews" id="reviews">
+    <div class="container">
+        <h2 class="reviews__title title">
+            отзывы
+        </h2>
+        <span class="visually-hidden">
+            Далее представлен слайдер отзывов
+        </span>
+
+        <ul class="reviews__items">
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="5">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Николай
+                        </span>
+                        <time class="review-card__data" datetime="27.05.2020">
+                            27.05.2020
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            У меня лошадь уже несколько лет
+                            стоит в этом кск, все устраивает,
+                            никаких претензий нет.
+                            Отличное питание,
+                            высококачественные корма.
+                            Ответственные конюхи,
+                            которые любят своё дело.
+                        </p>
+                        <p>
+                            И очень нравится, что в
+                            стоимость входят услуги
+                            ветеринара и коваля, в других клубах такого нет, а здесь на этом можно сэкономить
+                            немаленькую сумму. Вообщем всем рекомендую, более лучших условий за такую стоимость я
+                            нигде
+                            не видел!
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="4">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Лариса
+                        </span>
+                        <time class="review-card__data" datetime="07.06.2021">
+                            07.06.2021
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            Дочка занимается в этом клубе вольтижировкой. Нас все устраивает, за ее безопасность я
+                            спокойна: очень ответственный и опытный тренер, все правила безопасности соблюдаются на
+                            высшем уровне.
+                        </p>
+                        <p>
+                            Место известное - народу немало, особенно в выходные, благо места много, все
+                            размещаются: и
+                            тренеры, и спортсмены.
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="5">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Матвей
+                        </span>
+                        <time class="review-card__data" datetime="10.02.2019">
+                            10.02.2019
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            Классное место! Мне 28 лет, езжу заниматься в этот клуб верховой ездой. Никогда не
+                            думал,
+                            что в таком возрасте возможно заниматься спортом, но спасибо моему тренеру, он мне помог
+                            преодолеть этот барьер.
+                        </p>
+                        <p>
+                            Есть одно небольшое пожелание: зимой пустить автобусы чуть почаще, а то вечером
+                            приходится
+                            стоять на остановке минут 20.
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="5">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Артем
+                        </span>
+                        <time class="review-card__data" datetime="30.08.2020">
+                            30.08.2020
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            Занимаюсь в КСК "Контур" с 12 лет. Хочу отметить, что в этом клубе замечательные условия
+                            для
+                            занятий профессиональным спортом. Манеж и плац с шикарным грунтом, подходит для
+                            тренировок в
+                            любое время года. Просторная раздевалка и буфет. И самое главное - на территории есть
+                            душ,
+                            поверьте, после летних тренировок это очень важно!)
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="5">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Егор
+                        </span>
+                        <time class="review-card__data" datetime="19.05.2021">
+                            19.05.2021
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            Несколько раз в год приезжаем всей семьёй в поход, всегда остаёмся довольными! Радует,
+                            что
+                            лошади очень ухоженные и незагнанные. Маршрут всегда продумывается заранее, и проходит
+                            по
+                            самым живописным местам.
+                        </p>
+                        <p>
+                            Для нас является огромным плюсом хорошая дорога до самого кск и шикарная парковка рядом
+                            с
+                            ним.
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+
+            <li class="reviews__item">
+                <article class="review-card">
+                    <div class="review-card__rating" data-rateyo-rating="5">
+                        <span class="visually-hidden">
+                            Оценка пользователя
+                        </span>
+                    </div>
+                    <div class="review-card__top">
+                        <span class="review-card__name">
+                            Антонина
+                        </span>
+                        <time class="review-card__data" datetime="06.06.2020">
+                            06.06.2020
+                        </time>
+                    </div>
+                    <div class="review-card__text">
+                        <p>
+                            В конце мая организовали экскурсию для детей в клуб "Контур" (в честь выпускного.) Все
+                            ученики и родители остались очень довольными. Я, как классный руководитель, могу
+                            сказать,
+                            что все прошло на высшем уровне.
+                        </p>
+                        <p>
+                            После экскурсии был обед удивило высокое качество питания. Особенно детям понравилось
+                            катание на лошадях, организаторы предоставили полную безопасность.
+                        </p>
+                        <p>
+                            В заключение могу сказать, что клуб просто супер! Уверена, все другие мероприятия
+                            проходят
+                            также на высшем уровне!
+                        </p>
+                    </div>
+                    <button class="review-card__btn" type="button">
+                        Читать дальше
+                    </button>
+                </article>
+            </li>
+        </ul>
+
+        <form class="form form-star" name="rating">
+            <p class="form__heading">
+                заполните форму для отправки отзыва
+            </p>
+            <div class="form__group">
+                <div class="form__item">
+                    <svg class="form__icon">
+                        <use xlink:href="img/sprite.svg#name-icon"></use>
+                    </svg>
+                    <label class="visually-hidden" for="rating-name">
+                        Введите Ваше имя
+                    </label>
+                    <input class="form__input form__req" type="text" id="rating-name" name="rating-name" placeholder="Ваше имя*">
+                </div>
+                <div class="form__item form__input form-rating">
+                    <span class="form-rating__name">
+                        Ваша оценка
+                    </span>
+                    <ul class="form-rating__items">
+                        <li class="form-rating__item">
+                            <label class="visually-hidden" for="form-rating-1">
+                                По клику поставится одна звезда
+                            </label>
+                            <input class="form-rating__check check" id="form-rating-1" type="checkbox">
+                            <span class="form-rating__styler styler"></span>
+                        </li>
+                        <li class="form-rating__item">
+                            <label class="visually-hidden" for="form-rating-2">
+                                По клику поставится вторая звезда
+                            </label>
+                            <input class="form-rating__check check" id="form-rating-2" type="checkbox">
+                            <span class="form-rating__styler styler"></span>
+                        </li>
+                        <li class="form-rating__item">
+                            <label class="visually-hidden" for="form-rating-3">
+                                По клику поставится третья звезда
+                            </label>
+                            <input class="form-rating__check check" id="form-rating-3" type="checkbox">
+                            <span class="form-rating__styler styler"></span>
+                        </li>
+                        <li class="form-rating__item">
+                            <label class="visually-hidden" for="form-rating-4">
+                                По клику поставится четвертая звезда
+                            </label>
+                            <input class="form-rating__check check" id="form-rating-4" type="checkbox">
+                            <span class="form-rating__styler styler"></span>
+                        </li>
+                        <li class="form-rating__item">
+                            <label class="visually-hidden" for="form-rating-5">
+                                По клику поставится пятая звезда
+                            </label>
+                            <input class="form-rating__check check" id="form-rating-5" type="checkbox">
+                            <span class="form-rating__styler styler"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form__item form__item--big form__item--textarea">
+                <svg class="form__icon">
+                    <use xlink:href="img/sprite.svg#textarea-icon"></use>
+                </svg>
+                <label class="visually-hidden" for="rating-textarea">
+                    Введите Ваше сообщение
+                </label>
+                <textarea class="form__textarea form__input" id="rating-textarea" name="rating-textarea" placeholder="Ваше сообщение"></textarea>
+            </div>
+            <button class="form__button form-rating__button button" type="submit">
+                Отправить
+            </button>
+        </form>
+    </div>
+</section>
+
+        <section class="question">
+    <div class="question__bg" style="background-image: url('img/question-bg.jpg');"></div>
+    <div class="container">
+        <div class="question__body">
+            <h2 class="question__title title">
+                вопросы
+            </h2>
+            <ul class="question__items">
+                <li class="question__item">
+                    <button class="question__top" type="button">
+                        Что взять на первое занятие?
+                    </button>
+                    <div class="question__answer">
+                        <p>
+                            На первое занятие нужно одеться так, как вам будет удобнее.
+                            Остальные необходимые вещи (краги, шлем, перчатки) вам выдадут на конюшне.
+                        </p>
+                    </div>
+                </li>
+                <li class="question__item">
+                    <button class="question__top" type="button">
+                        Можно ли чем-то угостить лошадь?
+                    </button>
+                    <div class="question__answer">
+                        <p>
+                            Угощение лошади происходит строго с разрешения тренера или инструктора, так как у некоторых
+                            лошадей может быть аллергия.
+                            Но чаще всего угощают кусочком сахара, поэтому на первое занятие
+                            можете смело его брать!
+                        </p>
+                    </div>
+                </li>
+                <li class="question__item">
+                    <button class="question__top" type="button">
+                        Как отменить тренировку?
+                    </button>
+                    <div class="question__answer">
+                        <p>
+                            Тренировку отменить можно в любое время, но деньги будут возвращены только в том случае,
+                            если вы
+                            отмените занятие как минимум за 3 часа до его начала!
+                        </p>
+                    </div>
+                </li>
+                <li class="question__item">
+                    <button class="question__top" type="button">
+                        Как часто надо тренироваться?
+                    </button>
+                    <div class="question__answer">
+                        <p>
+                            Если речь идет не о профессиональных занятиях верховой езды, то достаточно заниматься 1-2
+                            раза в
+                            неделю, чтобы уверенно держаться в седле и получать удовольствие от занятий Конным спортом.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+        <section class="contact" id="contact">
+    <div class="container">
+        <h2 class="contact__title title">
+            контакты
+        </h2>
+        <div class="contact__inner">
+            <address class="contact__content">
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#map-marker-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Адрес
+                    </span>
+                    <p class="contact__text">
+                        Саурово, Павловский Посад, Московская обл.
+                    </p>
+                </div>
+
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#time-form-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Часы работы
+                    </span>
+                    <p class="contact__text contact__hours">
+                        Без выходных:
+                        10:00 - 15:00,
+                        16:00 - 21:00
+                    </p>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Телефон
+                    </span>
+                    <a class="contact__text contact__href" href="tel:+0140000199">
+                        + 014 000 01 99
+                    </a>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <span class="contact__heading">
+                        Почта
+                    </span>
+                    <a class="contact__text contact__href" href="mailto:kontur@gmail.com">
+                        kontur@gmail.com
+                    </a>
+                </div>
+                <div class="contact__item">
+                    <svg class="contact__icon">
+                        <use xlink:href="img/sprite.svg#internet-icon"></use>
+                    </svg>
+                    <span class="contact__heading contact__social">
+                        Мы в сетях
+                    </span>
+                    <ul class="social contact__list">
+                        <li class="social__item">
+                            <a class="social__link" href="https://desktop.telegram.org/" target="blank" style="background-image: url('img/telegram-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Telegram"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Vkontacte"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Instagram"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Facebook"
+                                </span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="https://twitter.com" target="blank" style="background-image: url('img/twitter-icon.png');">
+                                <span class="visually-hidden">
+                                    По клику откроется наша страница в социальной сети "Twitter"
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </address>
+            <div class="contact__map">
+                <div class="map" id="map">
+                    <span class="visually-hidden">
+                        Карта, по которой Вы сможете узнать наше месторасположение
+                    </span>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer>
+</script>
+
+<script>
+    function initMap() {
+        const myLatLng = { lat: 55.777356492461664, lng: 38.74747790315222 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: myLatLng,
+    });
+    new google.maps.Marker({
+        position: myLatLng,
+        map,
+    });
+    }
+</script>
+
+    </main>
+
+    <div class="popup popup-success">
+    <div class="popup__inner">
+        <div class="popup__body">
+            <div class="popup__icon icon">
+                <svg class="popup__badge">
+                    <use xlink:href="img/sprite.svg#check-icon"></use>
+                </svg>
+            </div>
+            <div class="popup__content">
+                <span class="popup__title">
+                    Заявка отправлена!
+                </span>
+                <p class="popup__text">
+                    В ближайшее время с Вами свяжется наш менеджер!
+                </p>
+                <button class="popup__button popup__button--success button" type="button">
+                    Хорошо
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-error">
+    <div class="popup__inner">
+        <div class="popup__body">
+            <svg class="popup__icon popup-error__icon icon">
+                <use xlink:href="img/sprite.svg#error-icon"></use>
+            </svg>
+            <div class="popup__content">
+                <span class="popup__title">
+                    Упс, что-то пошло не так!
+                </span>
+                <p class="popup__text">
+                    Нужно заполнить все поля ввода!
+                </p>
+                <button class="popup__button popup__button--error button" type="button">
+                    Хорошо
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+   <footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <p class="footer__text">
+                КСК “Контур”
+            </p>
+            <a class="logo footer__logo" href="#body">
+                <span class="visually-hidden">
+                    По клику вы переместитесь на верх сайта
+                </span>
+                <img class="logo__img footer__img" src="img/logo.png" alt="Логотип">
+            </a>
+            <p class="footer__text">
+                © Все права защищены
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+    <script src="js/main.min.js"></script>
+</html>

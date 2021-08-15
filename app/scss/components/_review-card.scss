@@ -1,0 +1,65 @@
+.review-card {
+    font-size: 20px;
+
+    &__rating {
+        margin-bottom: 25px;
+
+        @include max-w($lg) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        @include max-w($lg) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__data {
+        font-size: 16px;
+    }
+
+    &__text {
+        margin-bottom: 12px;
+        max-width: 340px;
+        max-height: 240px;
+        overflow: hidden;
+
+        @include max-w($lg) {
+            margin-bottom: 8px;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 7px;
+
+                @include max-w($lg) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        &--active {
+            overflow-y: scroll;
+        }
+    }
+
+    &__btn {
+        @include link;
+        cursor: pointer;
+        display: flex;
+        margin-left: auto;
+        @include adaptiv-value("font-size", 16, 17, 0);
+        color: $excretion;
+        border: none;
+        background-color: transparent;
+
+        &:active {
+            color: $accent;
+        }
+    }
+}

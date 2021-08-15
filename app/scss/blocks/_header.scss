@@ -1,0 +1,331 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    background-color: $main;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: $fw-500;
+        padding-bottom: 5px;
+
+        @include max-w($lg) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__inner {
+        display: flex; 
+    }
+
+    &__logo {
+        margin-right: 285px;
+        z-index: 999;
+        position: relative;
+        display: inline-block;
+
+        @include max-w($xl) {
+            margin-right: 200px;
+        }
+
+        @include max-w($lg) {
+            margin-right: 0;
+        }
+    }
+
+    &__img {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__phone {
+        font-weight: $fw-600;
+        align-self: center;
+        position: relative;
+        @include link;
+        padding-right: 5px;
+        margin-right: -5px;
+        padding-top: 5px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../img/sprite.svg#phone-icon');
+            background-repeat: no-repeat;
+            top: 12px;
+            left: -30px;
+            width: 20px;
+            height: 20px;
+
+            @include max-w($lm) {
+                width: 17px;
+                height: 17px;
+                left: -20px;
+                top: 10px;
+            }
+        }
+
+        @include max-w($lg) {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        @include max-w($lm) {
+            font-size: 18px;
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 10px;
+        fill: $special;
+        transition: fill 0.3s, opacity 0.3s;
+
+        &:hover {
+            fill: $accent;
+        }
+
+        &:active {
+            fill: $special;
+        }
+
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-self: center;
+    position: relative;
+    gap: 0px 30px;
+
+    @include max-w($lg) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $background;
+        text-align: center;
+        transform: translateY(-200%);
+        transition: transform 0.5s;
+        overflow: auto;
+        z-index: 998;
+        padding: 30px 0;
+        gap: 0;
+    }
+
+    &--active {
+        @include max-w($lg) {
+            transform: translateY(0);
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            @include max-w($lg) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__link {
+        @include link;
+        padding: 0 5px;
+
+        @include max-w($lg) {
+            padding: 10px;
+            font-size: 21px;
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            .menu__icon {
+                fill: $accent;
+            }
+        }
+
+        &:active {
+            .menu__icon {
+                opacity: 0.6;
+            }
+        }
+
+        &:focus {
+            .menu__icon {
+                fill: $excretion;
+            }
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 10px;
+        fill: $special;
+        transition: fill 0.3s, opacity 0.3s, transform 0.4s;
+
+        &--active {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.drop {
+    position: absolute;
+    top: 50px;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+
+    @include max-w($lg) {
+        position: relative;
+        top: 10px;
+        text-align: left;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    &--active {
+        display: block;
+    }
+
+    &__item {
+        padding: 3px 15px;
+        background-color: $background;
+
+        &:not(:last-child) {
+            border-bottom: 2px solid $main;
+
+            @include max-w($lg) {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__link {
+        padding: 5px 0;
+        font-size: 18px;
+        transition: color 0.3s, opacity 0.3s;
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        &:active {
+            color: $excretion;
+        }
+
+        &:focus {
+            color: $accent;
+        }
+    }
+}
+
+.burger {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    @include max-w($lg) {
+        display: block;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        border-radius: 1px;
+        background-color: $special;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &.burger--active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    &.burger--active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    &--active {
+        .burger__line {
+            transform: scale(0);
+        }
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        background-color: $special;
+        border-radius: 1px;
+        transition: transform 0.3s;    
+    }
+}
+
+.logo {
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        border: 2px solid $special;
+        border-radius: 5px;
+    }
+
+    &:focus {
+        border: 2px solid $accent;
+        border-radius: 5px;
+    }
+
+    &__img {
+        @include max-w($lg) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include max-w($md) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

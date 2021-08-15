@@ -1,0 +1,127 @@
+.jq-selectbox {
+    display: block;
+
+    &.focused {
+        .jq-selectbox__select {
+            border: 2px solid $accent;
+        }
+    }
+
+    li.selected {
+        background-color: $main;
+        color: $special;
+        opacity: 0.75;
+        position: relative;
+    }
+
+    li.disabled {
+        color: $special;
+        opacity: 0.75;
+        cursor: default;
+    }
+
+    &__select {
+        height: auto;
+        padding: 14px 40px 13px 20px;
+        border: 2px solid $background;
+        border-radius: 10px;
+        background-color: $main;
+        box-shadow: none;
+        font-family: $ibm;
+        font-size: 18px;
+        line-height: 2.1;
+        color: $special;
+        opacity: 0.75;
+        text-shadow: none;
+        background: linear-gradient(transparent, transparent);
+        color: $special;
+        text-shadow: none;
+
+        &:hover {
+            background: linear-gradient(transparent, transparent);
+        }
+
+        @include max-w($lg) {
+            line-height: 1.7;
+            padding: 12px 40px 12px 10px;
+        }
+    }
+
+    &__select-text {
+        color: $special;
+        background-color: transparent;
+    }
+
+    &__trigger {
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+
+    &__trigger-arrow {
+        position: relative;
+        border: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            right: -27px;
+            width: 20px;
+            height: 16px;
+            opacity: 0.75;
+            background-repeat: no-repeat;
+            background-image: url('../img/icons/check-icon.svg');
+            background-size: 20px 16px;
+
+            @include max-w($lg) {
+                top: 4px;
+                right: -32px;
+                width: 17px;
+                height: 13px;
+                background-size: 17px 13px;
+            }
+
+            @include max-w($lm) {
+                width: 17px;
+                height: 13px;
+                background-size: 17px 13px;
+            }
+        }
+    }
+
+    &__dropdown {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: $main;
+        color: $special;
+        font-family: $ibm;
+        font-size: 18px;
+        line-height: 2.1;
+        margin: 0;
+
+        li {
+            border: 1px solid $background;
+            border-radius: 10px;
+            min-height: 18px;
+            padding: 15px 10px 14px;
+            color: $special;
+            font-size: 18px;
+            line-height: 2.1;
+            font-family: $ibm;
+            transition: background-color 0.3s;
+            overflow-x: auto;
+
+            &:hover {
+                background-color: $background;
+                color: $special;
+            }
+
+            @include max-w($lg) {
+                padding: 10px 10px 9px;
+            }
+        }
+    }
+}

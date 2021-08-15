@@ -1,0 +1,65 @@
+.datepicker {
+    border: 1px solid $background;
+    border-radius: 10px;
+
+    &--nav {
+        border-bottom: 1px solid $background;
+    }
+
+    &--nav-action {
+        path {
+            stroke: $special;
+        }
+    }
+
+    &--nav-title {
+        color: $special;
+        font-family: $ibm;
+
+        i {
+            color: $special;
+            opacity: 0.7;
+        }
+    }
+
+    &--cell-day {
+        color: $special;
+
+        &.-current- {
+            color: $accent;
+        }
+
+        &.-focus- {
+            background-color: $background;
+        }
+
+        &.-weekend- {
+            color: $special;
+            opacity: 0.7;
+        }
+    }
+
+    &--day-name {
+        color: $accent;
+    }
+
+    &--cell.-disabled- {
+        color: $special;
+        opacity: 0.5;
+
+        &.-focus- {
+            background-color: transparent;
+            color: $special;
+        }
+    }
+
+    &--buttons,
+    &--time {
+        border-top: 1px solid $background;
+        padding: 4px;
+    }
+
+    &--button {
+        color: $accent;
+    }
+}

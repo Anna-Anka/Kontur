@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "air-datepicker": "^2.2.3",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "fancybox": "^3.0.1",
@@ -23,8 +24,11 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "ion-rangeslider": "^2.3.1",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.6.0",
+    "jquery-datetimepicker": "^2.5.21",
     "jquery-form-styler": "^2.0.2",
+    "masonry-layout": "^4.2.2",
     "mixitup": "^3.3.1",
     "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1"
