@@ -18,11 +18,11 @@ function fonts() {
     src('app/fonts/*.*')
         .pipe(ttf2woff())
         .pipe(dest('dist/fonts'))
-        .pipe(dest('app/fonts/convert'));
+        .pipe(dest('app/fonts'));
     return src('app/fonts/*.*')
         .pipe(ttf2woff2())
         .pipe(dest('dist/fonts'))
-        .pipe(dest('app/fonts/convert'));
+        .pipe(dest('app/fonts'));
 }
 
 function svgSprites() {
