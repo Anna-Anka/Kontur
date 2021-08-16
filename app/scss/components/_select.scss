@@ -42,6 +42,10 @@
                 height: 13px;
                 top: 22px;
             }
+
+            @include max-w($sm) {
+                display: none;
+            }
         }
     }
 

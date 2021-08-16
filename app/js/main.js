@@ -297,7 +297,7 @@ $(function () {
     $('.menu__link').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top - 50;
+            top = $(id).offset().top -50;
         $('body, html').animate({
             scrollTop: top
         }, 1500);
