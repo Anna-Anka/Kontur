@@ -50,7 +50,7 @@
 
             .services-top__headding {
                 &::after {
-                    background-image: url('../img/icons/check-icon.svg');
+                    transform: translate(10px, 5px) rotate(180deg);
                 }
             }
 
@@ -115,19 +115,20 @@
         }
 
         @include max-w($lm) {
-            padding-right: 13px;
+            padding-right: 15px;
             margin-bottom: 2px;
         }
 
         &::after {
             content: "";
             position: absolute;
-            background-image: url('../img/icons/check-reverse-icon.svg');
+            background-image: url('../img/icons/check-icon.svg');
             background-repeat: no-repeat;
             background-size: 25px 20px;
             width: 25px;
             height: 20px;
             transform: translate(10px, 7px);
+            transition: transform 0.3s;
 
             @include max-w($lg) {
                 width: 20px;

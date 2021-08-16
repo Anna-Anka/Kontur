@@ -59,11 +59,11 @@
         }
 
         @include max-w($md) {
-            font-size: 25px;
+            font-size: 23px;
         }
 
         @include max-w($sm) {
-            font-size: 21px;
+            font-size: 18px;
         }
     }
 

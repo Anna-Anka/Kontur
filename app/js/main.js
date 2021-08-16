@@ -1,24 +1,32 @@
 $(function () {  
     //Хеадер
     //Выпадающее меню
-    $(document).mouseup(function (e) {
-        let drop = $('.drop')
+    const btnMenu = document.querySelector('.menu__btn');
+    const menu = document.querySelector('.drop');
+    const toggleMenu = function () {
+        menu.classList.toggle('drop--active');
+        document.querySelector('.menu__icon').classList.toggle('menu__icon--active');
+    }
 
-        $('.menu__btn').on('click', function () {
-            $('.drop').toggleClass('drop--active');
-            $('.menu__icon').toggleClass('menu__icon--active');
-        });
+    btnMenu.addEventListener('click', function (e) {
+        e.stopPropagation();
+        toggleMenu();
+    });
 
-        if (!drop.is(e.target) &&
-            drop.has(e.target).length === 0) {
-            drop.removeClass('drop--active');
-            $('.menu__icon').removeClass('menu__icon--active');
-        };
+    document.addEventListener('click', function (e) {
+        const target = e.target;
+        const its_menu = target == menu || menu.contains(target);
+        const its_btnMenu = target == btnMenu;
+        const menu_is_active = menu.classList.contains('drop--active');
 
-        $('.drop__link').on("click", function () {
-            $('.drop').removeClass('drop--active');
-            $('.menu__icon').removeClass('menu__icon--active')
-        });
+        if (!its_menu && !its_btnMenu && menu_is_active) {
+            toggleMenu();
+        }
+    });
+
+    $('.drop__link').on('click', function () {
+        $('.drop').removeClass('drop--active');
+        $('.menu__icon').removeClass('menu__icon--active');
     });
 
     //Мобильное меню
@@ -31,6 +39,7 @@ $(function () {
     $('.menu__link, .header__logo, .drop__link').on("click", function () {
         $('.menu').removeClass('menu--active');
         $('.burger').removeClass('burger--active');
+        $('body').removeClass('lock');
     })
 
     //Главный слайдер
@@ -124,7 +133,7 @@ $(function () {
         $($(this).attr('href')).addClass('services-tabs__body--active');
     });
 
-    //Вадидация
+    //Валидация
     const form = document.querySelectorAll('.form');
     form.forEach(item => {
         item.addEventListener('submit', function (e) {
@@ -302,5 +311,4 @@ $(function () {
             scrollTop: top
         }, 1500);
     });
-
 });
