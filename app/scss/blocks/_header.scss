@@ -103,7 +103,6 @@
     display: flex;
     align-self: center;
     position: relative;
-    gap: 0px 30px;
 
     @include max-w($lg) {
         display: flex;
@@ -121,7 +120,6 @@
         overflow: auto;
         z-index: 998;
         padding: 45px 0 0;
-        gap: 0;
     }
 
     &--active {
@@ -132,6 +130,8 @@
 
     &__item {
         &:not(:last-child) {
+            margin-right: 30px;
+
             @include max-w($lg) {
                 margin-bottom: 30px;
             }

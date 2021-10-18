@@ -77,17 +77,22 @@
 
 .services-top {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
+    margin: 0 -50px 24px 0;
 
     @include max-w($xl) {
-        margin-bottom: 10px;
-        justify-content: flex-start;
-        gap: 30px;
+        margin: 0 -30px 10px 0;
     }
 
     @include max-w($lg) {
         margin-bottom: 30px;
+    }
+
+    &__descr {
+        margin-right: 50px;
+
+        @include max-w($xl) {
+            margin-right: 30px;
+        }
     }
 
     &__headding {
@@ -173,10 +178,12 @@
         border-radius: 5px;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-right: 50px;
 
         @include max-w($xl) {
             max-width: 485px;
             height: 450px;
+            margin-right: 30px;
         }
 
         @include max-w($lg) {
@@ -285,11 +292,11 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px 0;
+        margin-bottom: -20px;
         justify-content: space-between;
 
         @include max-w($lg) {
-            gap: 10px 30px;
+            margin: 0 -30px -10px 0;
         }
 
         &:not(:last-child) {
@@ -308,8 +315,13 @@
     &__item {
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
 
-        &--solo {
+        @include max-w($lg) {
+            margin: 0 30px 10px 0;
+        }
+
+        /*&--solo {
             justify-content: center;
             margin-bottom: 20px;
 
@@ -324,7 +336,7 @@
             @include max-w($sm) {
                 justify-content: flex-start;
             }
-        }
+        }*/
     }
 
     &__icon {
@@ -499,10 +511,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 0 30px;
+        margin-right: -30px;
     }
 
     &__list {
+        margin-right: 30px;
         &:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -547,7 +560,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 35px;
+    margin: 0 -35px -20px 0;
     margin-bottom: 37px;
 
     &__list {
@@ -558,6 +571,7 @@
         width: 100%;
         border-radius: 15px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+        margin: 0 35px 20px 0;
 
         @include max-w($xl) {
             max-width: 410px;
@@ -592,7 +606,7 @@
         flex-wrap: wrap;
         margin: 0 auto 33px;
         justify-content: space-between;
-        gap: 30px;
+        margin: 0 -30px -30px 0;
 
         @include max-w($xl) {
             margin-bottom: 20px;
@@ -608,6 +622,7 @@
     }
 
     &__item {
+        margin: 0 30px 30px 0;
         &:not(:last-child) {
             @include max-w($lm) {
                 margin-bottom: 10px;

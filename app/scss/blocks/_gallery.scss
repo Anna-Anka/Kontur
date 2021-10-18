@@ -1,12 +1,16 @@
 .filter {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 47px;
     margin-bottom: 41px;
 
     @include max-w($lg) {
-        margin-bottom: 13px;
-        gap: 7px 20px;
+        margin-bottom: 6px;
+    }
+
+    &__item {
+        @include max-w($lg) {
+            margin: 0 20px 7px 0;
+        }
     }
 
     &__btn {

@@ -10,8 +10,8 @@
 </head>
 
 <body id="body">
-    
-    <header class="header" id="header">
+    <div class="wrapper">
+        <header class="header" id="header">
     <h1 class="visually-hidden">
         КСК Контур - занятия конным спортом
     </h1>
@@ -21,7 +21,7 @@
                 <div class="header__top">
                     <a class="logo header__logo" href="#footer">
                         <span class="visually-hidden">
-                            По клику вы переместитесь вниз сайта
+                            Переместиться вниз
                         </span>
                         <img class="logo__img header__img" src="img/logo.png" alt="Логотип">
                     </a>
@@ -33,7 +33,7 @@
                         </a>
                         <button class="menu__btn" type="button">
                             <span class="visually-hidden">
-                                По клику откроется дополнительное меню с нашими услугами
+                                Открыть дополнительное меню
                             </span>
                             <svg class="menu__icon">
                                 <use xlink:href="img/sprite.svg#check-icon"></use>
@@ -95,7 +95,7 @@
             </a>
             <button class="burger" type="button">
                 <span class="visually-hidden">
-                    По клику откроется мобильное меню
+                    Открыть меню
                 </span>
                 <span class="burger__line"></span>
             </button>
@@ -103,10 +103,10 @@
     </div>
 </header>
 
-    <main class="main">
-        <section class="main-slider">
+        <main class="main">
+            <section class="main-slider">
     <span class="visually-hidden">
-        Начинается слайдер, в котором представлена часть наших услуг.
+        Слайдер с нашими услугами
     </span>
     <ul class="main-slider__items">
         <li class="main-slider__item" style="background-image: url('img/main-slider/1.jpg')">
@@ -201,7 +201,7 @@
     </ul>
 </section>
 
-        <section class="about" id="about">
+            <section class="about" id="about">
     <div class="about__top">
         <div class="container">
             <h2 class="about__title title">
@@ -224,7 +224,7 @@
         </div>
         <a class="about__video" data-fancybox href="https://www.youtube.com/watch?v=md4pg0eVRF0&feature=emb_logo" style="background-image: url('img/video.jpg');">
             <span class="visually-hidden">
-                По клику откроется видео 
+                Открыть видео 
             </span>
             <svg class="about__icon">
                 <use xlink:href="img/sprite.svg#play-icon"></use>
@@ -335,19 +335,18 @@
     </div>
 </section>
 
-        <section class="gallery">
+            <section class="gallery">
     <div class="container">
         <div class="gallery__inner">
             <h2 class="gallery__title title">
                 галерея
             </h2>
             <span class="visually-hidden">
-                Начинается фильтр фотографий, кликнув по кнопке Вам будут доступны фотографии с выбранного события
+                Фильтр фотографий
             </span>
             <ul class="filter">
                 <li class="filter__item">
-                    <button class="filter__btn filter__btn--active category" type="button"
-                        data-filter=".category-cup">
+                    <button class="filter__btn filter__btn--active category" type="button" data-filter=".category-cup">
                         кубок гагрина
                     </button>
                 </li>
@@ -364,9 +363,6 @@
             </ul>
 
             <div class="gallery__content">
-                <span class="visually-hidden">
-                    Начинаются фотографии с выбранного события, кликнув по ссылке откроется фото
-                </span>
                 <ul class="gallery__show">
                     <!--Кубок Гагарина-->
                     <li class="gallery__item gallery__a mix category-cup">
@@ -519,7 +515,7 @@
     </div>
 </section>
 
-        <section class="trainer section">
+            <section class="trainer section">
     <div class="container">
         <h2 class="trainer__title title">
             наши тренеры
@@ -562,21 +558,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Сергея Петровича в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Сергея Петровича в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Сергея Петровича в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -621,21 +617,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Полины Александровны в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Полины Александровны в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Полины Александровны в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -677,21 +673,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ольги Викторовны в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ольги Викторовны в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ольги Викторовны в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -736,21 +732,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Валерия Денисовича в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Валерия Денисовича в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Валерия Денисовича в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -795,21 +791,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Ларисы Анатольевны в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -851,21 +847,21 @@
                             <li class="social__item">
                                 <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Марины Сергеевныы в социальной сети "Vkontacte"
+                                        Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Марины Сергеевныы в социальной сети "Instagram"
+                                        Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
                                 <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
-                                        По клику откроется страница Марины Сергеевныы в социальной сети "Facebook"
+                                        Открыть страницу тренера в "Facebook"
                                     </span>
                                 </a>
                             </li>
@@ -877,12 +873,12 @@
     </div>
 </section>
 
-        <section class="services" id="services">
-            <div class="container">
-                <h2 class="services__title title">
-                    наши услуги
-                </h2>
-                <div class="services__item services__item--active services-professional" id="services-professional">
+            <section class="services" id="services">
+                <div class="container">
+                    <h2 class="services__title title">
+                        наши услуги
+                    </h2>
+                    <div class="services__item services__item--active services-professional" id="services-professional">
     <div class="services-top">
         <div class="services-top__picture" style="background-image: url('img/services/professional.jpg');">
         </div>
@@ -1349,7 +1345,7 @@
         </div>
     </div>
 </div>
-                <div class="services__item services__item--active services-classes" id="services-classes">
+                    <div class="services__item services__item--active services-classes" id="services-classes">
     <div class="services-top">
         <div class="services-top__descr">
             <h3 class="services-top__headding">
@@ -1785,7 +1781,7 @@
         </div>
     </div>
 </div>
-                <div class="services__item services__item--active services-walks" id="services-walks">
+                    <div class="services__item services__item--active services-walks" id="services-walks">
     <div class="services-top">
         <div class="services-top__picture" style="background-image: url('img/services/walk.jpg');"></div>
         <div class="services-top__descr">
@@ -2174,7 +2170,7 @@
         </div>
     </div>
 </div>
-                <div class="services__item services__item--active services-photoshoot" id="services-photoshoot">
+                    <div class="services__item services__item--active services-photoshoot" id="services-photoshoot">
     <div class="services-top services-top--slider">
         <div class="services-top__descr">
             <h3 class="services-top__headding">
@@ -2374,7 +2370,7 @@
         </div>
     </div>
 </div>
-                <div class="services__item services__item--active services-wait" id="services-wait">
+                    <div class="services__item services__item--active services-wait" id="services-wait">
     <div class="services-top services-top--slider">
         <ul class="services-top__picture services-slider">
             <li class="services-slider__item">
@@ -2535,7 +2531,7 @@
         </div>
     </div>
 </div>
-                <div class="services__item services__item--active services-events" id="services-events">
+                    <div class="services__item services__item--active services-events" id="services-events">
     <div class="services-top">
         <div class="services-top__descr">
             <h3 class="services-top__headding">
@@ -2628,16 +2624,16 @@
         </div>
     </div>
 </div>
-            </div>
-        </section>
-        
-        <section class="reviews" id="reviews">
+                </div>
+            </section>
+
+            <section class="reviews" id="reviews">
     <div class="container">
         <h2 class="reviews__title title">
             отзывы
         </h2>
         <span class="visually-hidden">
-            Далее представлен слайдер отзывов
+            Слайдер с отзывами 
         </span>
 
         <ul class="reviews__items">
@@ -2648,33 +2644,35 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Николай
-                        </span>
-                        <time class="review-card__data" datetime="27.05.2020">
-                            27.05.2020
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            У меня лошадь уже несколько лет
-                            стоит в этом кск, все устраивает,
-                            никаких претензий нет.
-                            Отличное питание,
-                            высококачественные корма.
-                            Ответственные конюхи,
-                            которые любят своё дело.
-                        </p>
-                        <p>
-                            И очень нравится, что в
-                            стоимость входят услуги
-                            ветеринара и коваля, в других клубах такого нет, а здесь на этом можно сэкономить
-                            немаленькую сумму. Вообщем всем рекомендую, более лучших условий за такую стоимость я
-                            нигде
-                            не видел!
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Николай
+                            </cite>
+                            <time class="review-card__data" datetime="27.05.2020">
+                                27.05.2020
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                У меня лошадь уже несколько лет
+                                стоит в этом кск, все устраивает,
+                                никаких претензий нет.
+                                Отличное питание,
+                                высококачественные корма.
+                                Ответственные конюхи,
+                                которые любят своё дело.
+                            </p>
+                            <p>
+                                И очень нравится, что в
+                                стоимость входят услуги
+                                ветеринара и коваля, в других клубах такого нет, а здесь на этом можно сэкономить
+                                немаленькую сумму. Вообщем всем рекомендую, более лучших условий за такую стоимость я
+                                нигде
+                                не видел!
+                            </p>
+                        </div>
+                    </blockquote>   
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2688,26 +2686,28 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Лариса
-                        </span>
-                        <time class="review-card__data" datetime="07.06.2021">
-                            07.06.2021
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            Дочка занимается в этом клубе вольтижировкой. Нас все устраивает, за ее безопасность я
-                            спокойна: очень ответственный и опытный тренер, все правила безопасности соблюдаются на
-                            высшем уровне.
-                        </p>
-                        <p>
-                            Место известное - народу немало, особенно в выходные, благо места много, все
-                            размещаются: и
-                            тренеры, и спортсмены.
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Лариса
+                            </cite>
+                            <time class="review-card__data" datetime="07.06.2021">
+                                07.06.2021
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                Дочка занимается в этом клубе вольтижировкой. Нас все устраивает, за ее безопасность я
+                                спокойна: очень ответственный и опытный тренер, все правила безопасности соблюдаются на
+                                высшем уровне.
+                            </p>
+                            <p>
+                                Место известное - народу немало, особенно в выходные, благо места много, все
+                                размещаются: и
+                                тренеры, и спортсмены.
+                            </p>
+                        </div>
+                    </blockquote>
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2721,27 +2721,29 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Матвей
-                        </span>
-                        <time class="review-card__data" datetime="10.02.2019">
-                            10.02.2019
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            Классное место! Мне 28 лет, езжу заниматься в этот клуб верховой ездой. Никогда не
-                            думал,
-                            что в таком возрасте возможно заниматься спортом, но спасибо моему тренеру, он мне помог
-                            преодолеть этот барьер.
-                        </p>
-                        <p>
-                            Есть одно небольшое пожелание: зимой пустить автобусы чуть почаще, а то вечером
-                            приходится
-                            стоять на остановке минут 20.
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Матвей
+                            </cite>
+                            <time class="review-card__data" datetime="10.02.2019">
+                                10.02.2019
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                Классное место! Мне 28 лет, езжу заниматься в этот клуб верховой ездой. Никогда не
+                                думал,
+                                что в таком возрасте возможно заниматься спортом, но спасибо моему тренеру, он мне помог
+                                преодолеть этот барьер.
+                            </p>
+                            <p>
+                                Есть одно небольшое пожелание: зимой пустить автобусы чуть почаще, а то вечером
+                                приходится
+                                стоять на остановке минут 20.
+                            </p>
+                        </div>
+                    </blockquote>
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2755,25 +2757,27 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Артем
-                        </span>
-                        <time class="review-card__data" datetime="30.08.2020">
-                            30.08.2020
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            Занимаюсь в КСК "Контур" с 12 лет. Хочу отметить, что в этом клубе замечательные условия
-                            для
-                            занятий профессиональным спортом. Манеж и плац с шикарным грунтом, подходит для
-                            тренировок в
-                            любое время года. Просторная раздевалка и буфет. И самое главное - на территории есть
-                            душ,
-                            поверьте, после летних тренировок это очень важно!)
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Артем
+                            </cite>
+                            <time class="review-card__data" datetime="30.08.2020">
+                                30.08.2020
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                Занимаюсь в КСК "Контур" с 12 лет. Хочу отметить, что в этом клубе замечательные условия
+                                для
+                                занятий профессиональным спортом. Манеж и плац с шикарным грунтом, подходит для
+                                тренировок в
+                                любое время года. Просторная раздевалка и буфет. И самое главное - на территории есть
+                                душ,
+                                поверьте, после летних тренировок это очень важно!)
+                            </p>
+                        </div>
+                    </blockquote>
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2787,28 +2791,30 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Егор
-                        </span>
-                        <time class="review-card__data" datetime="19.05.2021">
-                            19.05.2021
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            Несколько раз в год приезжаем всей семьёй в поход, всегда остаёмся довольными! Радует,
-                            что
-                            лошади очень ухоженные и незагнанные. Маршрут всегда продумывается заранее, и проходит
-                            по
-                            самым живописным местам.
-                        </p>
-                        <p>
-                            Для нас является огромным плюсом хорошая дорога до самого кск и шикарная парковка рядом
-                            с
-                            ним.
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Егор
+                            </cite>
+                            <time class="review-card__data" datetime="19.05.2021">
+                                19.05.2021
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                Несколько раз в год приезжаем всей семьёй в поход, всегда остаёмся довольными! Радует,
+                                что
+                                лошади очень ухоженные и незагнанные. Маршрут всегда продумывается заранее, и проходит
+                                по
+                                самым живописным местам.
+                            </p>
+                            <p>
+                                Для нас является огромным плюсом хорошая дорога до самого кск и шикарная парковка рядом
+                                с
+                                ним.
+                            </p>
+                        </div>
+                    </blockquote>
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2822,31 +2828,33 @@
                             Оценка пользователя
                         </span>
                     </div>
-                    <div class="review-card__top">
-                        <span class="review-card__name">
-                            Антонина
-                        </span>
-                        <time class="review-card__data" datetime="06.06.2020">
-                            06.06.2020
-                        </time>
-                    </div>
-                    <div class="review-card__text">
-                        <p>
-                            В конце мая организовали экскурсию для детей в клуб "Контур" (в честь выпускного.) Все
-                            ученики и родители остались очень довольными. Я, как классный руководитель, могу
-                            сказать,
-                            что все прошло на высшем уровне.
-                        </p>
-                        <p>
-                            После экскурсии был обед удивило высокое качество питания. Особенно детям понравилось
-                            катание на лошадях, организаторы предоставили полную безопасность.
-                        </p>
-                        <p>
-                            В заключение могу сказать, что клуб просто супер! Уверена, все другие мероприятия
-                            проходят
-                            также на высшем уровне!
-                        </p>
-                    </div>
+                    <blockquote class="review-card__content">
+                        <div class="review-card__top">
+                            <cite class="review-card__name">
+                                Антонина
+                            </cite>
+                            <time class="review-card__data" datetime="06.06.2020">
+                                06.06.2020
+                            </time>
+                        </div>
+                        <div class="review-card__text">
+                            <p>
+                                В конце мая организовали экскурсию для детей в клуб "Контур" (в честь выпускного.) Все
+                                ученики и родители остались очень довольными. Я, как классный руководитель, могу
+                                сказать,
+                                что все прошло на высшем уровне.
+                            </p>
+                            <p>
+                                После экскурсии был обед удивило высокое качество питания. Особенно детям понравилось
+                                катание на лошадях, организаторы предоставили полную безопасность.
+                            </p>
+                            <p>
+                                В заключение могу сказать, что клуб просто супер! Уверена, все другие мероприятия
+                                проходят
+                                также на высшем уровне!
+                            </p>
+                        </div>
+                    </blockquote>
                     <button class="review-card__btn" type="button">
                         Читать дальше
                     </button>
@@ -2928,7 +2936,7 @@
     </div>
 </section>
 
-        <section class="question">
+            <section class="question">
     <div class="question__bg" style="background-image: url('img/question-bg.jpg');"></div>
     <div class="container">
         <div class="question__body">
@@ -2989,7 +2997,7 @@
     </div>
 </section>
 
-        <section class="contact" id="contact">
+            <section class="contact" id="contact">
     <div class="container">
         <h2 class="contact__title title">
             контакты
@@ -3054,35 +3062,35 @@
                         <li class="social__item">
                             <a class="social__link" href="https://desktop.telegram.org/" target="blank" style="background-image: url('img/telegram-icon.png');">
                                 <span class="visually-hidden">
-                                    По клику откроется наша страница в социальной сети "Telegram"
+                                    Открыть наш "Telegram"
                                 </span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
                                 <span class="visually-hidden">
-                                    По клику откроется наша страница в социальной сети "Vkontacte"
+                                    Открыть нашу страницу в "Vkontacte"
                                 </span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
                                 <span class="visually-hidden">
-                                    По клику откроется наша страница в социальной сети "Instagram"
+                                    Открыть нашу страницу в "Instagram"
                                 </span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
                                 <span class="visually-hidden">
-                                    По клику откроется наша страница в социальной сети "Facebook"
+                                    Открыть нашу страницу в "Facebook"
                                 </span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link" href="https://twitter.com" target="blank" style="background-image: url('img/twitter-icon.png');">
                                 <span class="visually-hidden">
-                                    По клику откроется наша страница в социальной сети "Twitter"
+                                    Открыть нашу страницу в "Twitter"
                                 </span>
                             </a>
                         </li>
@@ -3092,7 +3100,7 @@
             <div class="contact__map">
                 <div class="map" id="map">
                     <span class="visually-hidden">
-                        Карта, по которой Вы сможете узнать наше месторасположение
+                        Карта
                     </span>
                 </div>
             </div>  
@@ -3117,9 +3125,9 @@
     }
 </script>
 
-    </main>
+        </main>
 
-    <div class="popup popup-success">
+        <div class="popup popup-success">
     <div class="popup__inner">
         <div class="popup__body">
             <div class="popup__icon icon">
@@ -3162,7 +3170,7 @@
         </div>
     </div>
 </div>
-   <footer class="footer" id="footer">
+        <footer class="footer" id="footer">
     <div class="container">
         <div class="footer__inner">
             <p class="footer__text">
@@ -3170,7 +3178,7 @@
             </p>
             <a class="logo footer__logo" href="#body">
                 <span class="visually-hidden">
-                    По клику вы переместитесь на верх сайта
+                    Переместиться на верх
                 </span>
                 <img class="logo__img footer__img" src="img/logo.png" alt="Логотип">
             </a>
@@ -3181,6 +3189,7 @@
     </div>
 </footer>
 
+    </div>
 </body>
 
     <script src="js/main.min.js"></script>
