@@ -1,4 +1,5 @@
 .reviews {
+
     background-color: $background;
     padding: 100px 0;
 
@@ -6,56 +7,8 @@
         padding: 15px 0 25px;
     }
 
-    &__title {
-        margin-bottom: 27px;
-        
-        @include max-w($xl) {
-            margin-bottom: 20px;
-        }
-
-        @include max-w($sm) {
-            margin-bottom: 5px;
-        }
-
-        @include max-w($lm) {
-            margin-bottom: 53px;
-        }
-    }
-
-    &__items {
-        margin-bottom: 24px;
-        position: relative;
-
-        @include max-w($lg) {
-            margin-bottom: 15px;
-        }
-    }
-
-    .slick-track {
-        display: flex;
-        // gap: 45px;
-        // @include adaptiv-value("gap", 45, 0, 0);
-    }
-
-    &__item {
-        background-color: $main;
-        border-radius: 5px;
-        box-shadow: (5px 5px 8px rgba(0, 0, 0, 0.1));
-        padding: 15px 15px 30px;
-        max-width: 370px;
-        max-height: 398px;
-        margin-bottom: 10px;
-        width: 100%;
-        position: relative;
-
-        @include max-w($lg) {
-            padding: 8px 10px 15px;
-            max-width: 360px;
-        }
-    }
-
-    &__next,
-    &__prev{
+    .slick-prev,
+    .slick-next {
         @include slick-arrow;
         width: 65px;
         height: 65px;
@@ -95,7 +48,7 @@
         }
     }
 
-    &__next {
+    .slick-next {
         @include adaptiv-value("right", -90, -20, 0);
         background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
 
@@ -116,7 +69,7 @@
         }
     }
 
-    &__prev {
+    .slick-prev {
         @include adaptiv-value("left", -90, -20, 0);
         background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
 
@@ -140,6 +93,60 @@
         }
     }
 
+    .slick-disabled.slick-next {
+        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
+    }
+
+    .slick-disabled.slick-prev {
+        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        
+        @include max-w($xl) {
+            margin-bottom: 20px;
+        }
+
+        @include max-w($sm) {
+            margin-bottom: 5px;
+        }
+
+        @include max-w($lm) {
+            margin-bottom: 53px;
+        }
+    }
+
+    &__items {
+        margin-bottom: 24px;
+        position: relative;
+
+        @include max-w($lg) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .slick-track {
+        display: flex;
+    }
+
+    &__item {
+        background-color: $main;
+        border-radius: 5px;
+        box-shadow: (5px 5px 8px rgba(0, 0, 0, 0.1));
+        padding: 15px 15px 30px;
+        max-width: 370px;
+        max-height: 398px;
+        margin-bottom: 10px;
+        width: 100%;
+        position: relative;
+
+        @include max-w($lg) {
+            padding: 8px 10px 15px;
+            max-width: 360px;
+        }
+    }
+
     .slick-initialized .slick-slide {
         justify-content: center;
         display: flex;
@@ -155,14 +162,6 @@
             background-color: $main;
             border: none;
         }
-    }
-
-    .slick-disabled.reviews__next {
-        background-image: url('../img/icons/arrows/arrow-right-icon.svg');  
-    }
-
-    .slick-disabled.reviews__prev {
-        background-image: url('../img/icons/arrows/arrow-left-icon.svg');  
     }
 }
 

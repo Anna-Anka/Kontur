@@ -19,6 +19,14 @@
         }
     }
 
+    &__content {
+        &--active {
+            .review-card__text {
+                overflow-y: scroll;
+            }
+        }
+    }
+
     &__data {
         font-size: 16px;
     }
@@ -43,9 +51,9 @@
             }
         }
 
-        &--active {
-            overflow-y: scroll;
-        }
+        // &--active {
+        //     overflow-y: scroll;
+        // }
     }
 
     &__btn {

@@ -82,6 +82,7 @@ function styles() {
         .pipe(browserSync.stream())
 }
 
+
 function scripts() {
     return src([
             'node_modules/jquery/dist/jquery.js',
@@ -92,6 +93,7 @@ function scripts() {
             'node_modules/air-datepicker/dist/js/datepicker.min.js',
             'node_modules/rateyo/src/jquery.rateyo.js',
             /*'node_modules/ion-rangeslider/js/ion.rangeSlider.js',,*/
+            'node_modules/swiper/swiper-bundle.min.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))

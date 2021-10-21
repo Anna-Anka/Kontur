@@ -6,7 +6,7 @@
     line-height: 1.6;
 
     @include max-w($xl) {
-        padding: 2px;
+        padding: 10px;
     }
 
     &__inner {

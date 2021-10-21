@@ -1,4 +1,23 @@
-$(function () {  
+//const { default: Swiper } = require("swiper");
+
+$(function () {
+
+    const swiper = new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        observes: true,
+        observeParents: true,
+        observeSlideChildren: true,
+    });
+
     //Хеадер
     //Выпадающее меню
     const btnMenu = document.querySelector('.menu__btn');
@@ -78,6 +97,8 @@ $(function () {
         }
     });
 
+
+
     //Формы
     const servicesTitle = document.querySelectorAll('.services-top__headding');
     servicesTitle.forEach(item => {
@@ -96,7 +117,7 @@ $(function () {
     $('.form__select, .form__number').styler();
 
     //Air Datepicker
-    $('.form__calendar').datepicker({
+    $('.form__input--calendar').datepicker({
         minDate: new Date(),
         dateFormat: "dd, MM",
         onSelect(fomattedDate, date, inst) {
@@ -175,13 +196,13 @@ $(function () {
 
     function formValidate(item) {
         let error = 0;
-        let formReq = document.querySelectorAll('.form--active .form__req');
+        let formReq = document.querySelectorAll('.form--active .req');
 
         for (let index = 0; index < formReq.length; index++) {
             const input = formReq[index];
             formRemoveError(input);
 
-            if (input.classList.contains('form__email')) {
+            if (input.classList.contains('email')) {
                 if (emailTest(input)) {
                     formAddError(input);
                     error++;
@@ -215,6 +236,30 @@ $(function () {
     }
 
     //Отзывы 
+    $('.reviews__items').slick({
+        infinite: false,
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1220,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+
+    });
+
     $('.form-rating__button').on('click', function () {
         if ($('.form-rating__check:checkbox').filter(':checked').length == 0) {
             $('.form-rating').addClass('form__error-item');
@@ -235,42 +280,11 @@ $(function () {
     $('.services-slider .slick-next').addClass('services-slider__next');
     $('.services-slider .slick-prev').addClass('services-slider__prev');
 
-    //Отзывы
-    $('.reviews__items').slick({
-        infinite: false,
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-
-        responsive: [{
-                breakpoint: 1220,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    arrows: true,
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                }
-            },
-        ]
-
-    });
-
-    $('.reviews .slick-next').addClass('reviews__next');
-    $('.reviews .slick-prev').addClass('reviews__prev');
-
     //Читать дальше
     const reviewButtons = document.querySelectorAll('.review-card__btn');
     reviewButtons.forEach(item => {
         item.addEventListener('click', () => {
-            item.previousElementSibling.classList.toggle('review-card__text--active');
+            item.previousElementSibling.classList.toggle('review-card__content--active');
         });
     });
 
@@ -297,7 +311,7 @@ $(function () {
     $('.main-slider__link, .services-top__link, .logo, .services-top__href, .drop__link').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top -70;
+            top = $(id).offset().top - 70;
         $('body, html').animate({
             scrollTop: top
         }, 1500);
@@ -306,7 +320,7 @@ $(function () {
     $('.menu__link').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top -50;
+            top = $(id).offset().top - 50;
         $('body, html').animate({
             scrollTop: top
         }, 1500);

@@ -1,23 +1,29 @@
 <div class="services__item services__item--active services-wait" id="services-wait">
-    <div class="services-top services-top--slider">
-        <ul class="services-top__picture services-slider">
-            <li class="services-slider__item">
-                <img class="services-top__img services-slider__img" src="img/services/wait-slider1.jpg" alt="постой лошадей">
-            </li>
-            <li class="services-slider__item">
-                <img class="services-top__img services-slider__img" src="img/services/wait-slider2.jpg" alt="постой лошадей">
-            </li>
-            <li class="services-slider__item">
-                <img class="services-top__img services-slider__img" src="img/services/wait-slider3.jpg" alt="постой лошадей">
-            </li>
-            <li class="services-slider__item">
-                <img class="services-top__img services-slider__img" src="img/services/wait-slider4.jpg" alt="постой лошадей">
-            </li>
-            <li class="services-slider__item">
-                <img class="services-top__img services-slider__img" src="img/services/wait-slider5.jpg" alt="постой лошадей">
-            </li>
-        </ul>
-        
+     <div class="services-top services-top--slider">
+        <div class="services-top__slider services-top__picture swiper">
+            <ul class="services-top__items swiper-wrapper">
+                <li class="services-top__item swiper-slide">
+                    <img class="services-top__img" src="img/services/wait-slider1.jpg" alt="постой лошадей">
+                </li>
+                <li class="services-top__item swiper-slide">
+                    <img class="services-top__img" src="img/services/wait-slider2.jpg" alt="постой лошадей">
+                </li>
+                <li class="services-top__item swiper-slide">
+                    <img class="services-top__img" src="img/services/wait-slider3.jpg" alt="постой лошадей">
+                </li>
+                <li class="services-top__item swiper-slide">
+                    <img class="services-top__img" src="img/services/wait-slider4.jpg" alt="постой лошадей">
+                </li>
+                <li class="services-top__item swiper-slide">
+                    <img class="services-top__img" src="img/services/wait-slider5.jpg" alt="постой лошадей">
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
         <div class="services-top__descr">
             <h3 class="services-top__headding">
                 постой лошадей
@@ -107,7 +113,8 @@
                     <label class="visually-hidden" for="services-wait__name">
                         Введите Ваше имя
                     </label>
-                    <input class="form__input form__req" type="text" id="services-wait__name" name="services-wait__name" placeholder="Ваше имя*">
+                    <input class="form__input req" type="text" id="services-wait__name" name="services-wait__name"
+                        placeholder="Ваше имя*">
                 </div>
 
                 <div class="form__group">
@@ -118,7 +125,8 @@
                         <label class="visually-hidden" for="services-wait__phone">
                             Введите Ваш номер телефона
                         </label>
-                        <input class="form__input form__req" type="tel" id="services-wait__phone" name="services-wait__phone" placeholder="Ваш номер телефона*">
+                        <input class="form__input req" type="tel" id="services-wait__phone" name="services-wait__phone"
+                            placeholder="Ваш номер телефона*">
                     </div>
                     <div class="form__item">
                         <svg class="form__icon">
@@ -127,24 +135,26 @@
                         <label class="visually-hidden" for="services-wait__email">
                             Введите Ваш e-mail
                         </label>
-                        <input class="form__input form__req form__email" type="text" id="services-wait__email" name="services-wait__email" placeholder="Ваш e-mail*">
+                        <input class="form__input req email" type="text" id="services-wait__email"
+                            name="services-wait__email" placeholder="Ваш e-mail*">
                     </div>
                 </div>
 
-                <div class="form__item form__item--big form__message">
+                <div class="form__item form__item--big form__item--message">
                     <svg class="form__icon">
                         <use xlink:href="img/sprite.svg#textarea-icon"></use>
                     </svg>
                     <label class="visually-hidden" for="services-wait__textarea">
                         Введите Ваше сообщение
                     </label>
-                    <textarea class="form__textarea form__input" id="services-wait__textarea" name="services-wait__textarea" placeholder="Ваше сообщение"></textarea>
+                    <textarea class="form__input form__input--textarea" id="services-wait__textarea"
+                        name="services-wait__textarea" placeholder="Ваше сообщение"></textarea>
                 </div>
 
                 <div class="form__agreement">
-                    <input class="form__input form__check form__req check" type="checkbox" id="services-wait__agreement">
-                    <span class="form__styler form__req styler"></span>
-                    <label class="form__label form__label--agreement" for="services-wait__agreement">
+                    <input class="form__input req check" type="checkbox" id="services-classes__agreement-1">
+                    <span class="form__styler req styler"></span>
+                    <label class="form__label form__label--agreement" for="services-classes__agreement-1">
                         Даю согласие на обработку
                     </label>
                     <a class="form__link" href="#">

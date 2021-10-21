@@ -4,6 +4,7 @@
     font-style: normal;
     font-display: swap;
     src: 
+        local('IBMPlexSerif-Light'),
         url('../fonts/IBMPlexSerif-Light.woff2') format('woff2'),
         url('../fonts/IBMPlexSerif-Light.woff') format('woff'),
 }
@@ -14,6 +15,7 @@
     font-style: normal;
     font-display: swap;
     src:
+        local('IBMPlexSerif-Regular'),
         url('../fonts/IBMPlexSerif-Regular.woff2') format('woff2'),
         url('../fonts/IBMPlexSerif-Regular.woff') format('woff'),
 }
@@ -24,6 +26,7 @@
     font-style: normal;
     font-display: swap;
     src:
+        local('IBMPlexSerif-Medium'),
         url('../fonts/IBMPlexSerif-Medium.woff2') format('woff2'),
         url('../fonts/IBMPlexSerif-Medium.woff') format('woff'),
 }
@@ -34,6 +37,7 @@
     font-style: normal;
     font-display: swap;
     src:
+        local('IBMPlexSerif-SemiBold'),
         url('../fonts/IBMPlexSerif-SemiBold.woff2') format('woff2'),
         url('../fonts/IBMPlexSerif-SemiBold.woff') format('woff'),
 }
@@ -44,6 +48,7 @@
     font-style: normal;
     font-display: swap;
     src:
+        local('Pacifico-Regular'),
         url('../fonts/Pacifico-Regular.woff2') format('woff2'),
         url('../fonts/Pacifico-Regular.woff') format('woff'),
 }

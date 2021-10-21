@@ -248,7 +248,8 @@
     cursor: pointer;
 
     @include max-w($lg) {
-        display: block;
+        display: flex;
+        order: 1;
     }
 
     &::after,

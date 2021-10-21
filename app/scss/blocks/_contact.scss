@@ -27,11 +27,19 @@
         align-items: center;
         flex-wrap: wrap;
         margin: 0 -39px -17px 0;
+
+        @include max-w($xl) {
+            margin: 0;
+        }
     }
 
     &__content {
         padding-left: 35px;
         margin: 0 39px 17px 0;
+
+        @include max-w($xl) {
+            margin-bottom: 15px;
+        }
 
         @include max-w($lg) {
             margin-right: auto;
@@ -66,6 +74,14 @@
         @include max-w($sm) {
             display: block;
         }
+
+        &--social {
+            margin-right: 44px;
+
+            @include max-w($lg) {
+                margin-right: 25px;
+            }
+        }
     }
 
     &__icon {
@@ -83,13 +99,17 @@
 
     &__text {
         max-width: 310px;
-    }
 
-    &__href {
-        @include link;
+        &--hours {
+            max-width: 180px;
+        }
 
-        @include max-w($sm) {
-            display: inline-block;
+        &--link {
+            @include link;
+
+            @include max-w($sm) {
+                display: inline-block;
+            }
         }
     }
 
@@ -97,18 +117,6 @@
         @include max-w($sm) {
             flex-wrap: wrap;
         }
-    }
-
-    &__social {
-        margin-right: 44px;
-
-        @include max-w($lg) {
-            margin-right: 25px;
-        }
-    }
-
-    &__hours {
-        max-width: 180px;
     }
 
     &__map {
@@ -136,7 +144,10 @@
         }
 
         &__item {
-            margin: 0 15px 10px 0;
+            margin-bottom: 10px;
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
         }
     }
 }
