@@ -125,6 +125,10 @@
         @include max-w($lg) {
             transform: translateY(0);
         }
+
+        .menu__item:first-child {
+            display: block;
+        }
     }
 
     &__item {
@@ -133,6 +137,15 @@
 
             @include max-w($lg) {
                 margin-bottom: 30px;
+                margin-right: 0;
+            }
+        }
+
+        &:first-child {
+            @include max-w($lg) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
@@ -144,6 +157,7 @@
         @include max-w($lg) {
             padding: 10px;
             font-size: 21px;
+            display: inline-block;
         }
     }
 
@@ -157,30 +171,31 @@
             position: absolute;
             top: 5px;
             right: 50%;
-            background-image: url('../img/sprite.svg#check-icon');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
+            mask-image: url('../img/sprite.svg#check-icon');
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
+            background-color: $special;
             width: 15px;
             height: 10px;
-            transition: filter 0.3s, transfor, 0.3s;
+            transition: background-color 0.3s, transform, 0.3s, opacity 0.3s;
         }
 
         &:focus {
             &::after {
-                filter: invert(37%) sepia(55%) saturate(684%) hue-rotate(59deg) brightness(98%) contrast(93%);
+                background-color: $excretion;
             }
         }
 
         &:hover {
             &::after {
-                filter: invert(88%) sepia(31%) saturate(4637%) hue-rotate(329deg) brightness(105%) contrast(111%);
+                background-color: $accent;
             }
         }
 
         &:active {
             &::after {
-                filter: invert(19%) sepia(12%) saturate(7116%) hue-rotate(72deg) brightness(98%) contrast(98%);
+                opacity: 0.6;
             }
         }
 
@@ -240,6 +255,10 @@
 
         &:active {
             color: $excretion;
+        }
+
+        @include max-w($lg) {
+            display: block;
         }
     }
 }
