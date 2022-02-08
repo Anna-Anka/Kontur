@@ -75,64 +75,6 @@
         }
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        @include slick-arrow;
-        width: 50px;
-        height: 50px;
-        transform: translateY(-50%);
-        top: 50%;
-        background-size: 25px 20px;
-        background-color: $main;
-        transition: opacity 0.3s,
-            background-color 0.3s;
-
-        &:hover {
-            background-color: $accent;
-        }
-
-        &:focus {
-            background-color: $accent;
-            border: 2px solid $main;
-        }
-
-        @include max-w($lm) {
-            display: none;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
-
-    .swiper-button-next {
-        right: 10px;
-        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
-
-        &:hover,
-        &:focus {
-            background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
-        }
-
-        &:active {
-            background-image: url('../img/icons/arrows/arrow-right3-icon.svg');
-        }
-    }
-
-    .swiper-button-prev {
-        left: 10px;
-        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
-
-        &:hover,
-        &:focus {
-            background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
-        }
-
-        &:active {
-            background-image: url('../img/icons/arrows/arrow-left3-icon.svg');
-        }
-    }
-
     .swiper-button-next.swiper-button-disabled,
     .swiper-button-prev.swiper-button-disabled {
         background-color: $background;
@@ -170,10 +112,10 @@
         }
     }
 
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
-    }
+    // .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    // .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    //     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+    // }
 }
 
 .services-top {
@@ -183,7 +125,7 @@
     min-width: 0;
 
     @include max-w($xl) {
-        margin: 0 -30px 10px 0;
+        margin: 0 -30px 18px 0;
     }
 
     @include max-w($lg) {
@@ -355,6 +297,62 @@
             margin: 0 auto;
         }
     }
+
+    &__button {
+        @include slick-arrow;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
+        top: 50%;
+        background-size: 25px 20px;
+        background-color: $main;
+        transition: opacity 0.3s, background-color 0.3s;
+
+        &:focus {
+            background-color: $accent;
+            border: 2px solid $main;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $accent;
+
+            .services-top__icon {
+                fill: $main;
+            }
+        }
+
+        &:active {
+            background-color: $main;
+
+            .services-top__icon {
+                fill: $excretion;
+            }
+        }
+
+        @include max-w($lm) {
+            display: none;
+        }
+
+        &--next {
+            right: 10px;
+        }
+
+        &--prev {
+            left: 10px;         
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__icon {
+        width: 25px;
+        height: 20px;
+        fill: $accent;
+        transition: fill 0.3s;
+    }
 }
 
 .services-adventages {
@@ -406,71 +404,170 @@
             @include max-w($xl) {
                 margin-bottom: 15px;
             }
-
-            @include max-w($lg) {
-                margin-bottom: 10px;
-            }
         }
     }
 
     &__item {
-        display: flex;
-        align-items: center;
         margin-bottom: 20px;
+        position: relative;
+        padding: 7px 0 7px 55px;
+        @include adaptiv-value("font-size", 20, 18, 0);
 
         @include max-w($lg) {
-            margin: 0 30px 10px 0;
+            margin: 0 30px 15px 0;
+            padding-left: 40px;
+        }
+
+        @include max-w($sm) {
+            padding-left: 37px;
         }
 
         &--solo {
-            justify-content: center;
-            margin-bottom: 20px;
+            display: table;
+            margin: 0 auto 20px;
 
             @include max-w($xl) {
                 margin-bottom: 15px;
-            }
-
-            @include max-w($lg) {
-                margin-bottom: 10px;
             }
 
             @include max-w($sm) {
                 justify-content: flex-start;
             }
         }
-    }
 
-    &__icon {
-        max-width: 45px;
-        min-width: 45px;
-        height: 45px;
-        fill: $excretion;
-        margin-right: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: -10px;
+            transform: translateY(-50%);
+            border: 2px solid $accent;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px 25px;
 
-        @include max-w($lg) {
-            min-width: 37px;
-            max-width: 37px;
-            height: 37px;
+            @include max-w($lg) {
+                width: 38px;
+                height: 38px;
+                background-size: 23px 23px;
+            }
         }
 
-        @include max-w($lg) {
-            margin-right: 12px;
+        &--age12 {
+            &::before {
+                background-image: url("../img/icon/services/age12-icon.svg");
+            }
+        }
+
+        &--age7 {
+            &::before {
+                background-image: url("../img/icon/services/age7-icon.svg");
+            }
+        }
+
+        &--age0 {
+            &::before {
+                background-image: url("../img/icon/services/age0-icon.svg");
+            }
+        }
+
+        &--group {
+            &::before {
+                background-image: url("../img/icon/services/group-icon.svg");
+            }
+        }
+
+        &--time {
+            &::before {
+                background-image: url("../img/icon/services/time-icon.svg");
+            }
+        }
+
+        &--subscription {
+            &::before {
+                background-image: url("../img/icon/services/subscription-icon.svg");
+            }
+        }
+
+        &--present {
+            &::before {
+                background-image: url("../img/icon/services/present-icon.svg");
+            }
+        }
+
+        &--dress {
+            &::before {
+                background-image: url("../img/icon/services/dress-icon.svg");
+            }
+        }
+
+        &--photo {
+            &::before {
+                background-image: url("../img/icon/services/photo-icon.svg");
+            }
+        }
+
+        &--price {
+            &::before {
+                background-image: url("../img/icon/services/price-icon.svg");
+            }
+        }
+
+        &--hay {
+            &::before {
+                background-image: url("../img/icon/services/hay-icon.svg");
+            }
+        }
+
+        &--field {
+            &::before {
+                background-image: url("../img/icon/services/field-icon.svg");
+            }
+        }
+
+        &--doctor {
+            &::before {
+                background-image: url("../img/icon/services/doctor-icon.svg");
+            }
+        }
+
+        &--stable {
+            &::before {
+                background-image: url("../img/icon/services/stable-icon.svg");
+            }
         }
     }
 
-    &__badge {
-        width: 25px;
-        height: 25px;
+    // &__icon {
+    //     max-width: 45px;
+    //     min-width: 45px;
+    //     height: 45px;
+    //     fill: $excretion;
+    //     margin-right: 15px;
 
-        @include max-w($lg) {
-            width: 22px;
-            height: 22px;
-        }
-    }
+    //     @include max-w($lg) {
+    //         min-width: 37px;
+    //         max-width: 37px;
+    //         height: 37px;
+    //     }
 
-    &__text {
-        @include adaptiv-value("font-size", 20, 18, 0);
-    }
+    //     @include max-w($lg) {
+    //         margin-right: 12px;
+    //     }
+    // }
+
+    // &__badge {
+    //     width: 25px;
+    //     height: 25px;
+
+    //     @include max-w($lg) {
+    //         width: 22px;
+    //         height: 22px;
+    //     }
+    // }
 
     &--wait {
         margin-bottom: 3px;
@@ -770,6 +867,7 @@
 
         &--slider {
             margin-bottom: 45px;
+
             @include max-w($lg) {
                 margin-bottom: 25px;
             }

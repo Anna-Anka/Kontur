@@ -60,4 +60,17 @@ address {
 
 button {
     padding: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    appearance: none;
+}
+
+a,
+button,
+textarea,
+input,
+select {
+    outline: 0;
 }

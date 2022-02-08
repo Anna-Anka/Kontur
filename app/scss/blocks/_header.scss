@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
         font-weight: $fw-500;
-        padding-bottom: 5px;
+        padding: 5px;
 
         @include max-w($lg) {
             padding-bottom: 0;
@@ -47,16 +47,15 @@
         align-self: center;
         position: relative;
         @include link;
-        padding-right: 5px;
         margin-right: -5px;
-        padding-top: 5px;
+        border: 2px solid transparent;
 
         &::before {
             content: "";
             position: absolute;
             background-image: url('../img/sprite.svg#phone-icon');
             background-repeat: no-repeat;
-            top: 12px;
+            top: 6px;
             left: -30px;
             width: 20px;
             height: 20px;
@@ -85,16 +84,16 @@
         fill: $special;
         transition: fill 0.3s, opacity 0.3s;
 
+        &:focus {
+            opacity: 0.6;
+        }
+
         &:hover {
             fill: $accent;
         }
 
         &:active {
             fill: $special;
-        }
-
-        &:focus {
-            opacity: 0.6;
         }
     }
 }
@@ -149,37 +148,46 @@
     }
 
     &__btn {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
+        position: relative;
+        width: 20px;
+        height: 30px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 50%;
+            background-image: url('../img/sprite.svg#check-icon');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 15px;
+            height: 10px;
+            transition: filter 0.3s, transfor, 0.3s;
+        }
+
+        &:focus {
+            &::after {
+                filter: invert(37%) sepia(55%) saturate(684%) hue-rotate(59deg) brightness(98%) contrast(93%);
+            }
+        }
 
         &:hover {
-            .menu__icon {
-                fill: $accent;
+            &::after {
+                filter: invert(88%) sepia(31%) saturate(4637%) hue-rotate(329deg) brightness(105%) contrast(111%);
             }
         }
 
         &:active {
-            .menu__icon {
-                opacity: 0.6;
+            &::after {
+                filter: invert(19%) sepia(12%) saturate(7116%) hue-rotate(72deg) brightness(98%) contrast(98%);
             }
         }
-
-        &:focus {
-            .menu__icon {
-                fill: $excretion;
-            }
-        }
-    }
-
-    &__icon {
-        width: 15px;
-        height: 10px;
-        fill: $special;
-        transition: fill 0.3s, opacity 0.3s, transform 0.4s;
 
         &--active {
-            transform: rotate(180deg);
+            &::after {
+                transform: rotate(-180deg);
+            }
         }
     }
 }
@@ -222,16 +230,16 @@
         font-size: 18px;
         transition: color 0.3s, opacity 0.3s;
 
+        &:focus {
+            color: $accent;
+        }
+
         &:hover {
             opacity: 0.75;
         }
 
         &:active {
             color: $excretion;
-        }
-
-        &:focus {
-            color: $accent;
         }
     }
 }
@@ -241,11 +249,8 @@
     display: none;
     width: 30px;
     height: 20px;
-    border: none;
-    background-color: transparent;
     z-index: 999;
     transition: transform 0.3s;
-    cursor: pointer;
 
     @include max-w($lg) {
         display: flex;
@@ -297,35 +302,5 @@
         background-color: $special;
         border-radius: 1px;
         transition: transform 0.3s;    
-    }
-}
-
-.logo {
-    transition: opacity 0.3s;
-
-    &:hover {
-        opacity: 0.7;
-    }
-
-    &:active {
-        border: 2px solid $special;
-        border-radius: 5px;
-    }
-
-    &:focus {
-        border: 2px solid $accent;
-        border-radius: 5px;
-    }
-
-    &__img {
-        @include max-w($lg) {
-            width: 60px;
-            height: 60px;
-        }
-
-        @include max-w($md) {
-            width: 50px;
-            height: 50px;
-        }
     }
 }

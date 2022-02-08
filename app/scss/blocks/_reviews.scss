@@ -7,8 +7,7 @@
         padding: 15px 0 25px;
     }
 
-    .slick-prev,
-    .slick-next {
+    &__arrow {
         @include slick-arrow;
         width: 65px;
         height: 65px;
@@ -34,6 +33,15 @@
             background-size: 30px 20px;
         }
 
+        &:focus {
+            border-color: $accent;
+            background-color: $main;
+
+            .reviews__icon {
+                fill: $accent;
+            }
+        }
+
         &:hover {
             background-color: $excretion;
         }
@@ -42,68 +50,69 @@
             opacity: 0.6;
         }
 
+        &--next {
+            @include adaptiv-value("right", -90, -20, 0);
+
+            @include max-w($lx) {
+                right: 23px;
+            }
+
+            @include max-w($md) {
+                right: 0;
+            }
+
+            @include max-w($sm) {
+                right: 25px;
+            }
+        }
+
+        &--prev {
+            @include adaptiv-value("left", -90, -20, 0);
+
+            @include max-w($lx) {
+                left: unset;
+                right: 104px;
+            }
+
+            @include max-w($md) {
+                right: unset;
+                left: 0px;
+            }
+
+            @include max-w($sm) {
+                right: 95px;
+                left: unset;
+            }
+        }
+    }
+
+    &__icon {
+        width: 35px;
+        height: 30px;
+        fill: $main;
+        transition: fill 0.3s;
+    }
+
+    .slick-disabled {
+        background-color: $main;
+        cursor: default;
+
+        &:hover,
+        &:active,
         &:focus {
-            border: 2px solid $accent;
             background-color: $main;
-        }
-    }
-
-    .slick-next {
-        @include adaptiv-value("right", -90, -20, 0);
-        background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
-
-        @include max-w($lx) {
-            right: 23px;
+            border: none;
+            opacity: 1;
         }
 
-        @include max-w($md) {
-            right: 0;
+        .reviews__icon {
+            fill: $accent;
         }
-
-        @include max-w($sm) {
-            right: 25px;
-        }
-
-        &:focus {
-            background-image: url('../img/icons/arrows/arrow-right-icon.svg');
-        }
-    }
-
-    .slick-prev {
-        @include adaptiv-value("left", -90, -20, 0);
-        background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
-
-        @include max-w($lx) {
-            left: unset;
-            right: 104px;
-        }
-
-        @include max-w($md) {
-            right: unset;
-            left: 0px;
-        }
-
-        @include max-w($sm) {
-            right: 95px;
-            left: unset;
-        }
-
-        &:focus {
-            background-image: url('../img/icons/arrows/arrow-left-icon.svg');
-        }
-    }
-
-    .slick-disabled.slick-next {
-        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
-    }
-
-    .slick-disabled.slick-prev {
-        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
     }
 
     &__title {
         margin-bottom: 27px;
-        
+
         @include max-w($xl) {
             margin-bottom: 20px;
         }
@@ -151,23 +160,13 @@
         justify-content: center;
         display: flex;
     }
-
-    .slick-disabled {
-        background-color: $main;
-        cursor: default;
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $main;
-            border: none;
-        }
-    }
 }
 
 .form-star {
     .form-rating {
         padding: 14px 20px 13px 20px;
+        border-radius: 10px;
+        border: 2px solid $background;
 
         @include max-w($lg) {
             padding: 8px 5px 9px 10px;

@@ -35,34 +35,34 @@
     }
 
     &__text {
-       line-height: 1.9;
-       max-width: 710px;
-       font-family: $ibm;
-       font-weight: $fw-400;
+        line-height: 1.9;
+        max-width: 710px;
+        font-family: $ibm;
+        font-weight: $fw-400;
 
-       @include max-w($xl) {
-           max-width: 550px;
-       }
+        @include max-w($xl) {
+            max-width: 550px;
+        }
 
-       @include max-w($lg) {
-           margin-bottom: 20px;
-           max-width: 650px;
-           line-height: 1.6;
-       }
+        @include max-w($lg) {
+            margin-bottom: 20px;
+            max-width: 650px;
+            line-height: 1.6;
+        }
 
-       @include max-w($md) {
-           margin-bottom: 10px;
-       }
-       
-       p {
-           &:not(:last-child) {
-               margin-bottom: 20px;
+        @include max-w($md) {
+            margin-bottom: 10px;
+        }
 
-               @include max-w($lg) {
-                   margin-bottom: 10px;
-               }
-           }
-       }
+        p {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+
+                @include max-w($lg) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 
     &__video {
@@ -102,36 +102,50 @@
             opacity: 0;
         }
 
-        &:hover::before {
-            opacity: 0.5;
+        &:focus {
+            border-color: $accent;
+
+            &::after {
+                background-color: $background;
+            }
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0.5;
+            }
+
+            &:after {
+                background-color: $background;
+                @include adaptiv-value("width", 90, 65, 0);
+                @include adaptiv-value("height", 90, 65, 0);
+            }
         }
 
         &:active {
             transform: scale(1.1);
+
+            &::after {
+                @include adaptiv-value("width", 60, 25, 0);
+                @include adaptiv-value("height", 60, 25, 0);
+            }
         }
 
-        &:focus {
-            border: 2px solid $accent;
-        }
-    }
-
-    &__icon {
-        @include adaptiv-value("width", 80, 45, 0);
-        @include adaptiv-value("height", 80, 45, 0);
-        fill: $main;
-        z-index: 5;
-        transition: fill 0.3s;
-
-        &:hover {
-            fill: $accent; 
-        }
-
-        &:active {
-            border: 1px solid $accent;
-        }
-
-        &:focus {
-            border: 1px solid $main;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            @include adaptiv-value("width", 80, 45, 0);
+            @include adaptiv-value("height", 80, 45, 0);
+            z-index: 5;
+            transition: background-color 0.3s, width 0.3s, height 0.3s;
+            mask-image: url("../img/sprite.svg#play-icon");
+            mask-position: center;
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            transform: translate(-50%);
+            background-color: $main;
         }
     }
 }
@@ -149,7 +163,7 @@
         justify-content: center;
         margin: 0 -40px -30px 0;
 
-        @include max-w($lg)  {
+        @include max-w($lg) {
             margin-bottom: -20px;
         }
     }
@@ -159,31 +173,68 @@
         border-radius: 10px;
         box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.07);
         border-radius: 10px;
-        padding: 30px 0 36px;
+        padding: 100px 0 36px;
         max-width: 324px;
         width: 100%;
         margin-right: 40px;
         margin: 0 40px 30px 0;
+        position: relative;
 
         @include max-w($lg) {
-            padding: 15px 0 20px;
+            padding: 70px 0 20px;
             margin-bottom: 20px;
         }
-    }
 
-    &__icon {
-        padding: 0 10px;
-        margin: 0 auto 17px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid $accent;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px 30px;
 
-        @include max-w($lg) {
-            margin-bottom: 5px;
+            @include max-w($lg) {
+                width: 50px;
+                height: 50px;
+                background-size: 35px 25px;
+            }
         }
-    }
 
-    &__badge {
-        width: 40px;
-        height: 30px;
-        fill: $special;
+        &--bus {
+            &::before {
+                background-image: url("../img/icon/about/bus-icon.svg");
+            }
+        }
+
+        &--view {
+            &::before {
+                background-image: url("../img/icon/about/view-icon.svg");
+            }
+        }
+
+        &--trainer {
+            &::before {
+                background-image: url("../img/icon/about/trainer-icon.svg");
+            }
+        }
+
+        &--horse {
+            &::before {
+                background-image: url("../img/icon/about/horse-icon.svg");
+            }
+        }
+
+        &--conditions {
+            &::before {
+                background-image: url("../img/icon/about/conditions-icon.svg");
+            }
+        }
     }
 
     &__body {
@@ -201,6 +252,7 @@
         font-family: $pac;
         letter-spacing: 3px;
         display: inline-block;
+        font-weight: 400;
 
         @include max-w($lg) {
             margin-bottom: 5px;

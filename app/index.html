@@ -12,9 +12,6 @@
 <body id="body">
     <div class="wrapper">
         <header class="header" id="header">
-    <h1 class="visually-hidden">
-        КСК Контур - занятия конным спортом
-    </h1>
     <div class="container">
         <div class="header__content">
             <button class="burger" type="button">
@@ -24,14 +21,9 @@
                 <span class="burger__line"></span>
             </button>
             <nav class="header__inner">
-                <div class="header__top">
-                    <a class="logo header__logo" href="#footer">
-                        <span class="visually-hidden">
-                            Переместиться вниз
-                        </span>
-                        <img class="logo__img" src="img/logo.png" alt="Логотип">
-                    </a>
-                </div>
+                <a class="header__logo logo" href="#footer">
+                    <img class="logo__img" src="img/logo.png" alt="Логотип">
+                </a>
                 <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link" href="#services">
@@ -41,9 +33,6 @@
                             <span class="visually-hidden">
                                 Открыть дополнительное меню
                             </span>
-                            <svg class="menu__icon">
-                                <use xlink:href="img/sprite.svg#check-icon"></use>
-                            </svg>
                         </button>
 
                         <ul class="drop">
@@ -104,17 +93,20 @@
 </header>
 
         <main class="main">
+            <h1 class="visually-hidden">
+                КСК Контур - занятия конным спортом
+            </h1>
             <section class="main-slider">
-    <span class="visually-hidden">
+    <h2 class="visually-hidden">
         Слайдер с нашими услугами
-    </span>
+    </h2>
     <ul class="main-slider__items">
         <li class="main-slider__item" style="background-image: url('img/main-slider/1.jpg')">
             <div class="container container--big">
                 <div class="main-slider__offer">
-                    <p class="main-slider__heading title">
+                    <h3 class="main-slider__heading title">
                         профессиональные занятия
-                    </p>
+                    </h3>
                     <div class="main-slider__text">
                         <p>
                             Индивидуальные и групповые занятия конкуром/выездкой/вольтижировкой для детей и взрослых
@@ -130,9 +122,9 @@
         <li class="main-slider__item" style="background-image: url('img/main-slider/2.jpg')">
             <div class="container container--big">
                 <div class="main-slider__offer">
-                    <p class="main-slider__heading title">
+                    <h3 class="main-slider__heading title">
                         походы и прогулки на лошадях
-                    </p>
+                    </h3>
                     <div class="main-slider__text">
                         <p>
                             Прогулки и походы по живописным местам от нескольких часов до нескольких дней.
@@ -148,9 +140,9 @@
         <li class="main-slider__item" style="background-image: url('img/main-slider/3.jpg')">
             <div class="container container--big">
                 <div class="main-slider__offer">
-                    <p class="main-slider__heading title">
+                    <h3 class="main-slider__heading title">
                         фотосессии с лошадьми
-                    </p>
+                    </h3>
                     <div class="main-slider__text">
                         <p>
                             Наши профессиональные фотографы помогут запечатлеть лучшие моменты.
@@ -166,9 +158,9 @@
         <li class="main-slider__item" style="background-image: url('img/main-slider/4.jpg')">
             <div class="container container--big">
                 <div class="main-slider__offer">
-                    <p class="main-slider__heading title">
+                    <h3 class="main-slider__heading title">
                         организация экскурсий
-                    </p>
+                    </h3>
                     <div class="main-slider__text">
                         <p>
                             Мы организовываем экскурсии на территорию нашего КСК для детей и взрослых
@@ -184,9 +176,9 @@
         <li class="main-slider__item" style="background-image: url('img/main-slider/5.jpg')">
             <div class="container container--big">
                 <div class="main-slider__offer">
-                    <p class="main-slider__heading title">
+                    <h3 class="main-slider__heading title">
                         постой лошадей
-                    </p>
+                    </h3>
                     <div class="main-slider__text">
                         <p>
                             Аренда денников с самыми лушими условиями для ваших лошадей.
@@ -226,25 +218,17 @@
             <span class="visually-hidden">
                 Открыть видео 
             </span>
-            <svg class="about__icon">
-                <use xlink:href="img/sprite.svg#play-icon"></use>
-            </svg>
         </a>
     </div>
 
     <div class="container container--big">
         <div class="advantages">
             <ul class="advantages__items">
-                <li class="advantages__item">
-                    <div class="advantages__icon icon">
-                        <svg class="advantages__badge">
-                            <use xlink:href="img/sprite.svg#bus-icon"></use>
-                        </svg>
-                    </div>
+                <li class="advantages__item advantages__item--bus">
                     <div class="advantages__body">
-                        <span class="advantages__name">
+                        <h3 class="advantages__name">
                             Легко добраться
-                        </span>
+                        </h3>
                         <div class="advantages__text">
                             <p>
                                 В пяти минутах ходьбы
@@ -255,16 +239,11 @@
                     </div>
                 </li>
 
-                <li class="advantages__item">
-                    <div class="advantages__icon icon">
-                        <svg class="advantages__badge">
-                            <use xlink:href="img/sprite.svg#tree-icon"></use>
-                        </svg>
-                    </div>
+                <li class="advantages__item advantages__item--view">
                     <div class="advantages__body">
-                        <span class="advantages__name">
+                        <h3 class="advantages__name">
                             Красивые виды
-                        </span>
+                        </h3>
                         <div class="advantages__text">
                             <p>
                                 Недалеко находится водоем, территорию КСК окружают поля и леса.
@@ -273,16 +252,11 @@
                     </div>
                 </li>
 
-                <li class="advantages__item">
-                    <div class="advantages__icon icon">
-                        <svg class="advantages__badge">
-                            <use xlink:href="img/sprite.svg#trainer-icon"></use>
-                        </svg>
-                    </div>
+                <li class="advantages__item advantages__item--trainer">
                     <div class="advantages__body">
-                        <span class="advantages__name">
+                        <h3 class="advantages__name">
                             Лучшие тренеры
-                        </span>
+                        </h3>
                         <div class="advantages__text">
                             <p>
                                 В нашем клубе работают
@@ -293,16 +267,11 @@
                     </div>
                 </li>
 
-                <li class="advantages__item">
-                    <div class="advantages__icon icon">
-                        <svg class="advantages__badge">
-                            <use xlink:href="img/sprite.svg#horse-icon"></use>
-                        </svg>
-                    </div>
+                <li class="advantages__item advantages__item--horse">
                     <div class="advantages__body">
-                        <span class="advantages__name">
+                        <h3 class="advantages__name">
                             Много лошадей
-                        </span>
+                        </h3>
                         <div class="advantages__text">
                             <p>
                                 В нашем КСК находится около 100 голов, мы сможем подобрать лошадь под ваш уровень.
@@ -312,16 +281,11 @@
                     </div>
                 </li>
 
-                <li class="advantages__item">
-                    <div class="advantages__icon icon">
-                        <svg class="advantages__badge">
-                            <use xlink:href="img/sprite.svg#house-icon"></use>
-                        </svg>
-                    </div>
+                <li class="advantages__item advantages__item--conditions">
                     <div class="advantages__body">
-                        <span class="advantages__name">
+                        <h3 class="advantages__name">
                             Хорошие условия
-                        </span>
+                        </h3>
                         <div class="advantages__text">
                             <p>
                                 Плохая погода не помешает занятиям, на территории есть 2 крытых манежа (40*20), 2 плаца
@@ -341,9 +305,6 @@
             <h2 class="gallery__title title">
                 галерея
             </h2>
-            <span class="visually-hidden">
-                Фильтр фотографий
-            </span>
             <ul class="filter">
                 <li class="filter__item">
                     <button class="filter__btn filter__btn--active category" type="button" data-filter=".category-cup">
@@ -366,136 +327,167 @@
                 <ul class="gallery__show">
                     <!--Кубок Гагарина-->
                     <li class="gallery__item gallery__item--a mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/1.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/1.jpg" alt="Кубок Гагарина"> 
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/1.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/1.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
+                        
                     </li>
                     <li class="gallery__item gallery__item--b mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/2.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/2.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/2.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/2.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--c mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/3.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/3.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/3.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/3.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--d mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/4.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/4.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/4.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/4.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--e mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/5.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/5.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/5.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/5.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
 
                     <!--Чемпионат области-->
                     <li class="gallery__item gallery__item--a mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/1.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/1.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/1.jpg">
+                            <img class="gallery__img" src="img/gallery/area/1.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--b mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/2.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/2.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/2.jpg">
+                            <img class="gallery__img" src="img/gallery/area/2.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--c mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/3.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/3.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/3.jpg">
+                            <img class="gallery__img" src="img/gallery/area/3.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--d mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/4.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/4.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/4.jpg">
+                            <img class="gallery__img" src="img/gallery/area/4.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--e mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/5.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/5.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/5.jpg">
+                            <img class="gallery__img" src="img/gallery/area/5.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
 
                     <!--Фестиваль 2020-->
                     <li class="gallery__item gallery__item--a mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/1.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/1.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/1.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/1.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--b mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/2.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/2.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/2.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/2.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--c mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/3.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/3.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/3.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/3.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--d mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/4.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/4.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/4.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/4.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--e mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/5.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/5.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/5.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/5.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                 </ul>
 
                 <ul class="gallery__noshow">
                     <!--Кубок Гагарина-->
                     <li class="gallery__item gallery__item--c mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/6.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/6.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/6.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/6.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--d mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/7.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/7.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/7.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/7.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--e mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/8.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/8.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/8.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/8.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--a mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/9.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/9.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/9.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/9.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--b mix category-cup">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/10.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/cup/10.jpg" alt="Кубок Гагарина">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/cup/10.jpg">
+                            <img class="gallery__img" src="img/gallery/cup/10.jpg" alt="Кубок Гагарина" loading="lazy">
+                        </a>
                     </li>
 
                     <!--Чемпионат области-->
                     <li class="gallery__item gallery__item--c mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/6.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/6.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/6.jpg">
+                            <img class="gallery__img" src="img/gallery/area/6.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--d mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/7.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/7.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/7.jpg">
+                            <img class="gallery__img" src="img/gallery/area/7.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--e mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/8.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/8.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/8.jpg">
+                            <img class="gallery__img" src="img/gallery/area/8.jpg" alt="Чемпионат области" loading="lazy">
+                        </a> 
                     </li>
                     <li class="gallery__item gallery__item--a mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/9.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/9.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/9.jpg">
+                            <img class="gallery__img" src="img/gallery/area/9.jpg" alt="Чемпионат области" loading="lazy">
+                        </a> 
                     </li>
                     <li class="gallery__item gallery__item--b mix category-area">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/10.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/area/10.jpg" alt="Чемпионат области">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/area/10.jpg">
+                            <img class="gallery__img" src="img/gallery/area/10.jpg" alt="Чемпионат области" loading="lazy">
+                        </a>
                     </li>
 
                     <!--Фестиваль 2020-->
                     <li class="gallery__item gallery__item--c mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/6.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/6.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/6.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/6.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>  
                     </li>
                     <li class="gallery__item gallery__item--d mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/7.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/7.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/7.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/7.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>  
                     </li>
                     <li class="gallery__item gallery__item--e mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/8.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/8.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/8.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/8.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>   
                     </li>
                     <li class="gallery__item gallery__item--a mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/9.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/9.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/9.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/9.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                     <li class="gallery__item gallery__item--b mix category-festival">
-                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/10.jpg"></a>
-                        <img class="gallery__img" src="img/gallery/festival/10.jpg" alt="Фестиваль 2020">
+                        <a class="gallery__link" data-fancybox="gallery" href="img/gallery/festival/10.jpg">
+                            <img class="gallery__img" src="img/gallery/festival/10.jpg" alt="Фестиваль 2020" loading="lazy">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -556,21 +548,21 @@
                         </span>
                         <ul class="social trainer-card__social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link " href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -615,21 +607,21 @@
                         </span>
                         <ul class="social trainer-card__social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link " href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -671,21 +663,21 @@
                         </span>
                         <ul class="social trainer-card__social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link " href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -730,21 +722,21 @@
                         </span>
                         <ul class="social trainer-card__social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link " href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -789,21 +781,21 @@
                         </span>
                         <ul class="trainer-card__social social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link " href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link " href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -845,21 +837,21 @@
                         </span>
                         <ul class="trainer-card__social social">
                             <li class="social__item">
-                                <a class="social__link" href="https://vk.com" target="blank" style="background-image: url('img/vk-icon.png');">
+                                <a class="social__link" href="https://vk.com" target="_blank" style="background-image: url('img/vk-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Vkontacte"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://instagram.com" target="blank" style="background-image: url('img/instagram-icon.png');">
+                                <a class="social__link" href="https://instagram.com" target="_blank" style="background-image: url('img/instagram-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Instagram"
                                     </span>
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="https://facebook.com" target="blank" style="background-image: url('img/facebook-icon.png');">
+                                <a class="social__link" href="https://facebook.com" target="_blank" style="background-image: url('img/facebook-icon.png');">
                                     <span class="visually-hidden">
                                         Открыть страницу тренера в "Facebook"
                                     </span>
@@ -904,63 +896,28 @@
         <ul class="services-adventages">
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#age-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Для взрослых и детей с 12 лет
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--age12">
+                        Для взрослых и детей с 12 лет
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#group-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Групповые и индивидульные занятия
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--group">
+                        Групповые и индивидульные занятия
                     </li>
                 </ul>
             </li>
 
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#time-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Продолжительность занятий - 1 час
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--time">
+                        Продолжительность занятий - 1 час
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#subscription-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Покупка абонемента от 5 занятий
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--subscription">
+                        Покупка абонемента от 5 занятий
                     </li>
                 </ul>
             </li>
 
-            <li class="services-adventages__item services-adventages__item--solo">
-                <div class="services-adventages__icon icon">
-                    <svg class="services-adventages__badge">
-                        <use xlink:href="img/sprite.svg#present-icon"></use>
-                    </svg>
-                </div>
-                <p class="services-adventages__text">
-                    Покупка подарочного сертификата (с неограниченным сроком действия)
-                </p>
+            <li class="services-adventages__item services-adventages__item--present services-adventages__item--solo">
+                Покупка подарочного сертификата (с неограниченным сроком действия)
             </li>
         </ul>
 
@@ -1156,8 +1113,7 @@
                         <label class="visually-hidden" for="services-professional__textarea-1">
                             Введите Ваше сообщение
                         </label>
-                        <textarea class="form__input form__input--textarea" id="services-professional__textarea-1"
-                            name="services-professional__textarea-1" placeholder="Ваше сообщение"></textarea>
+                        <textarea class="form__input form__input--textarea" id="services-professional__textarea-1" name="services-professional__textarea-1" placeholder="Ваше сообщение"></textarea>
                     </div>
 
                     <div class="form__agreement">
@@ -1373,63 +1329,28 @@
         <ul class="services-adventages">
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#age2-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Для взрослых и детей с 7 лет
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--age7">
+                        Для взрослых и детей с 7 лет
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#group-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Групповые и индивидульные занятия
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--group">
+                        Групповые и индивидульные занятия
                     </li>
                 </ul>
             </li>
 
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#time-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Продолжительность занятий - 1 час
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--time">
+                        Продолжительность занятий - 1 час
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#subscription-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Покупка абонемента от 5 занятий
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--subscription">
+                        Покупка абонемента от 5 занятий
                     </li>
                 </ul>
             </li>
 
-            <li class="services-adventages__item services-adventages__item--solo">
-                <div class="services-adventages__icon icon">
-                    <svg class="services-adventages__badge">
-                        <use xlink:href="img/sprite.svg#present-icon"></use>
-                    </svg>
-                </div>
-                <p class="services-adventages__text">
-                    Покупка подарочного сертификата (с неограниченным сроком действия )
-                </p>
+            <li class="services-adventages__item services-adventages__item--solo services-adventages__item--present ">
+                Покупка подарочного сертификата (с неограниченным сроком действия )
             </li>
         </ul>
 
@@ -1514,8 +1435,7 @@
             </span>
             <ul class="services-tabs__items">
                 <li class="services-tabs__item">
-                    <a class="services-tabs__link services-tabs__link--active category"
-                        href="#services-tabs__classes-1">
+                    <a class="services-tabs__link services-tabs__link--active category" href="#services-tabs__classes-1">
                         Занятия
                     </a>
                 </li>
@@ -1687,13 +1607,11 @@
                         <label class="visually-hidden" for="services-classes__textarea-2">
                             Введите Ваше сообщение
                         </label>
-                        <textarea class="form__input form__input--textarea" id="services-classes__textarea-2"
-                            name="services-classes__textarea-2" placeholder="Ваше сообщение"></textarea>
+                        <textarea class="form__input form__input--textarea" id="services-classes__textarea-2" name="services-classes__textarea-2" placeholder="Ваше сообщение"></textarea>
                     </div>
 
                     <div class="form__agreement">
-                        <input class="form__input req check" type="checkbox"
-                            id="services-classes__agreement-1">
+                        <input class="form__input req check" type="checkbox" id="services-classes__agreement-1">
                         <span class="form__styler req styler"></span>
                         <label class="form__label form__label--agreement" for="services-classes__agreement-1">
                             Даю согласие на обработку
@@ -1751,7 +1669,7 @@
                         <label class="form__label" for="services-classes__number-3">
                             На сколько занятий?
                         </label>
-                        <input class="form__number" type="number" min="5" value="5" id="services-classes__number-3"  name="services-classes__number-3">
+                        <input class="form__number" type="number" min="5" value="5" id="services-classes__number-3" name="services-classes__number-3">
                     </div>
 
                     <div class="form__item form__item--big form__item--message">
@@ -1815,45 +1733,17 @@
                         прогулки
                     </span>
                     <ul class="pricing-card__items">
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#age2-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Взрослые и дети с 7 лет
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--age7">
+                            Взрослые и дети с 7 лет
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#time-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Продолжительность от 1 часа
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--time">
+                            Продолжительность от 1 часа
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#tree-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                По самым красивым местам
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--view">
+                            По самым красивым местам
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#trainer-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Опытные инструктора
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--trainer">
+                            Опытные инструктора
                         </li>
                     </ul>
                     <div class="pricing-card__price">
@@ -1870,65 +1760,23 @@
                         походы
                     </span>
                     <ul class="pricing-card__items">
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#age-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Взрослые и дети с 12 лет
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--age12">
+                            Взрослые и дети с 12 лет
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#time-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Продолжительность от 24 часов
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--time">
+                            Продолжительность от 24 часов
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#tree-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                По самым красивым местам
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--view">
+                            По самым красивым местам
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#trainer-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Опытные инструктора
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--trainer">
+                            Опытные инструктора
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#map-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Заранее продумываем маршрут
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--map">
+                            Заранее продумываем маршрут
                         </li>
-                        <li class="pricing-card__item">
-                            <div class="pricing-card__icon icon">
-                                <svg class="pricing-card__badge badge">
-                                    <use xlink:href="img/sprite.svg#car-icon"></use>
-                                </svg>
-                            </div>
-                            <p class="pricing-card__text">
-                                Доставляем все вещи на ночлег
-                            </p>
+                        <li class="pricing-card__item pricing-card__item--car">
+                            Доставляем все вещи на ночлег
                         </li>
                     </ul>
                     <div class="pricing-card__price">
@@ -2206,8 +2054,16 @@
             </ul>
             <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="swiper-button-prev services-top__button services-top__button--prev" type="button">
+                <svg class="services-top__icon">
+                    <use xlink:href="img/sprite.svg#arrow-left-icon"></use>
+                </svg>
+            </button>
+            <button class="swiper-button-next services-top__button services-top__button--next" type="button">
+                <svg class="services-top__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right-icon"></use>
+                </svg>
+            </button>
         </div>
     </div>
 
@@ -2215,63 +2071,28 @@
         <ul class="services-adventages">
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#age3-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Фотосессии с детьми
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--age0">
+                        Фотосессии с детьми
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#time-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Продолжительность от 1 часа
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--time">
+                        Продолжительность от 1 часа
                     </li>
                 </ul>
             </li>
 
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#dress-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Помощь в создание образа
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--dress">
+                        Помощь в создание образа
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#photo-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Обработка фотографий включена в стоимость
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--photo">
+                        Обработка фотографий включена в стоимость
                     </li>
                 </ul>
             </li>
 
-            <li class="services-adventages__item services-adventages__item--solo">
-                <div class="services-adventages__icon icon">
-                    <svg class="services-adventages__badge">
-                        <use xlink:href="img/sprite.svg#price-icon"></use>
-                    </svg>
-                </div>
-                <p class="services-adventages__text">
-                    Цена - 2000 рублей в час
-                </p>
+            <li class="services-adventages__item services-adventages__item--price services-adventages__item--solo">
+                Цена - 2000 рублей в час
             </li>
         </ul>
 
@@ -2400,8 +2221,16 @@
             </ul>
             <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="swiper-button-prev services-top__button services-top__button--prev" type="button">
+                <svg class="services-top__icon">
+                    <use xlink:href="img/sprite.svg#arrow-left-icon"></use>
+                </svg>
+            </button>
+            <button class="swiper-button-next services-top__button services-top__button--next" type="button">
+                <svg class="services-top__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right-icon"></use>
+                </svg>
+            </button>
         </div>
 
         <div class="services-top__descr">
@@ -2432,49 +2261,21 @@
         <ul class="services-adventages">
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#hay-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Кормление 6 раз в день (3 раза сено и 3 раза овес)
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--hay">
+                        Кормление 6 раз в день (3 раза сено и 3 раза овес)
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#field-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Прогулки от 4 часов в день
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--field">
+                        Прогулки от 4 часов в день
                     </li>
                 </ul>
             </li>
             <li class="services-adventages__list">
                 <ul class="services-adventages__items">
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#doctor-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Услуги коваля и ветеринара
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--doctor">
+                        Услуги коваля и ветеринара
                     </li>
-                    <li class="services-adventages__item">
-                        <div class="services-adventages__icon icon">
-                            <svg class="services-adventages__badge">
-                                <use xlink:href="img/sprite.svg#stable-icon"></use>
-                            </svg>
-                        </div>
-                        <p class="services-adventages__text">
-                            Отапливаемая конюшня, денник 4на4, горячая вода.
-                        </p>
+                    <li class="services-adventages__item services-adventages__item--stable">
+                        Отапливаемая конюшня, денник 4на4, горячая вода.
                     </li>
                 </ul>
             </li>
@@ -2482,9 +2283,9 @@
 
         <div class="services-tabs" id="services-tabs__wait">
             <form class="form" name="services-wait">
-                <p class="form__heading">
+                <span class="form__heading">
                     заполните форму
-                </p>
+                </span>
 
                 <div class="form__item form__item--big">
                     <svg class="form__icon">
@@ -2651,10 +2452,6 @@
         <h2 class="reviews__title title">
             отзывы
         </h2>
-        <span class="visually-hidden">
-            Слайдер с отзывами 
-        </span>
-
         <ul class="reviews__items">
             <li class="reviews__item">
                 <article class="review-card">
@@ -2955,8 +2752,8 @@
     </div>
 </section>
 
-            <section class="question">
-    <div class="question__bg" style="background-image: url('img/question-bg.jpg');"></div>
+            <section class="question" style="background-image: url('img/question-bg.jpg');">
+    <!-- <div class="question__bg" style="background-image: url('img/question-bg.jpg');"></div> -->
     <div class="container">
         <div class="question__body">
             <h2 class="question__title title">
@@ -3023,10 +2820,7 @@
         </h2>
         <div class="contact__inner">
             <address class="contact__content">
-                <div class="contact__item">
-                    <svg class="contact__icon">
-                        <use xlink:href="img/sprite.svg#map-marker-icon"></use>
-                    </svg>
+                <div class="contact__item contact__item--address">
                     <span class="contact__heading">
                         Адрес
                     </span>
@@ -3035,10 +2829,7 @@
                     </p>
                 </div>
 
-                <div class="contact__item">
-                    <svg class="contact__icon">
-                        <use xlink:href="img/sprite.svg#time-form-icon"></use>
-                    </svg>
+                <div class="contact__item contact__item--time">
                     <span class="contact__heading">
                         Часы работы
                     </span>
@@ -3048,10 +2839,7 @@
                         16:00 - 21:00
                     </p>
                 </div>
-                <div class="contact__item">
-                    <svg class="contact__icon">
-                        <use xlink:href="img/sprite.svg#phone-icon"></use>
-                    </svg>
+                <div class="contact__item contact__item--phone">
                     <span class="contact__heading">
                         Телефон
                     </span>
@@ -3059,10 +2847,7 @@
                         + 014 000 01 99
                     </a>
                 </div>
-                <div class="contact__item">
-                    <svg class="contact__icon">
-                        <use xlink:href="img/sprite.svg#email-icon"></use>
-                    </svg>
+                <div class="contact__item contact__item--email">
                     <span class="contact__heading">
                         Почта
                     </span>
@@ -3070,10 +2855,7 @@
                         kontur@gmail.com
                     </a>
                 </div>
-                <div class="contact__item">
-                    <svg class="contact__icon">
-                        <use xlink:href="img/sprite.svg#internet-icon"></use>
-                    </svg>
+                <div class="contact__item contact__item--internet">
                     <span class="contact__heading contact__heading--social">
                         Мы в сетях
                     </span>
@@ -3192,18 +2974,18 @@
         <footer class="footer" id="footer">
     <div class="container">
         <div class="footer__inner">
-            <p class="footer__text">
+            <span class="footer__text">
                 КСК “Контур”
-            </p>
-            <a class="logo footer__logo" href="#body">
+            </span>
+            <a class="footer__logo logo" href="#body">
                 <span class="visually-hidden">
                     Переместиться на верх
                 </span>
                 <img class="logo__img" src="img/logo.png" alt="Логотип">
             </a>
-            <p class="footer__text">
+            <span class="footer__text">
                 © Все права защищены
-            </p>
+            </span>
         </div>
     </div>
 </footer>

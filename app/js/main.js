@@ -24,7 +24,7 @@ $(function () {
     const menu = document.querySelector('.drop');
     const toggleMenu = function () {
         menu.classList.toggle('drop--active');
-        document.querySelector('.menu__icon').classList.toggle('menu__icon--active');
+        document.querySelector('.menu__btn').classList.toggle('menu__btn--active');
     }
 
     btnMenu.addEventListener('click', function (e) {
@@ -66,10 +66,9 @@ $(function () {
         dots: true,
         infinite: false,
         arrows: true,
+        prevArrow: '<button type="button" class="main-slider__arrow main-slider__arrow--prev"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button type="button" class="main-slider__arrow main-slider__arrow--next"><svg class="main-slider__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
     });
-
-    $('.main-slider .slick-next').addClass('main-slider__next');
-    $('.main-slider .slick-prev').addClass('main-slider__prev');
 
     //Галерея
     //Показ
@@ -242,6 +241,8 @@ $(function () {
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        prevArrow: '<button type="button" class="reviews__arrow reviews__arrow--prev"><svg class="reviews__icon"><use xlink:href="../img/sprite.svg#arrow-left-icon"></use></svg></button>',
+        nextArrow: '<button type="button" class="reviews__arrow reviews__arrow--next"><svg class="reviews__icon"><use xlink:href="../img/sprite.svg#arrow-right-icon"></use></svg></button>',
         responsive: [{
                 breakpoint: 1220,
                 settings: {
@@ -276,9 +277,6 @@ $(function () {
         speed: 600,
         easing: 'ease',
     });
-
-    $('.services-slider .slick-next').addClass('services-slider__next');
-    $('.services-slider .slick-prev').addClass('services-slider__prev');
 
     //Читать дальше
     const reviewButtons = document.querySelectorAll('.review-card__btn');

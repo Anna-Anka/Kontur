@@ -23,7 +23,6 @@
 
     &__inner {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin: 0 -39px -17px 0;
@@ -34,7 +33,6 @@
     }
 
     &__content {
-        padding-left: 35px;
         margin: 0 39px 17px 0;
 
         @include max-w($xl) {
@@ -51,6 +49,7 @@
         @include adaptiv-value("font-size", 22, 20, 0);
         line-height: 1.7;
         position: relative;
+        padding: 3px 0 3px 30px;
 
         &:not(:last-child) {
             margin-bottom: 17px;
@@ -62,6 +61,49 @@
 
         @include max-w($sm) {
             display: block;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            mask-position: center;
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            background-color: $special;
+        }
+
+        &--address {
+            &::before {
+                mask-image: url("../img/sprite.svg#map-marker-icon");
+            }
+        }
+
+        &--time {
+            &::before {
+                mask-image: url("../img/sprite.svg#time-form-icon");
+            }
+        }
+
+        &--phone {
+            &::before {
+                mask-image: url("../img/sprite.svg#phone-icon");
+            }
+        }
+
+        &--email {
+            &::before {
+                mask-image: url("../img/sprite.svg#email-icon");
+            }
+        }
+
+        &--internet {
+            &::before {
+                mask-image: url("../img/sprite.svg#internet-icon");
+            }
         }
     }
 

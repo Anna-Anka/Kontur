@@ -36,33 +36,9 @@
     &__item {
         display: flex;
         align-items: center;
+        position: relative;
+        padding: 7px 0 7px 55px;
 
-        &:not(:last-child) {
-            @include adaptiv-value("margin-bottom", 15, 10, 0);
-        }
-    }
-
-    &__icon {
-        max-width: 44px;
-        min-width: 44px;
-        height: 44px;
-        @include adaptiv-value("margin-right", 15, 10, 0);
-        background-color: $main;
-
-        @include max-w($md) {
-            max-width: 38px;
-            min-width: 38px;
-            height: 38px;
-        }
-    }
-
-    &__badge {
-        fill: $excretion;
-        @include adaptiv-value("width", 25, 18, 0);
-        @include adaptiv-value("height", 25, 18, 0);
-    }
-
-    &__text {
         @include adaptiv-value("font-size", 20, 17, 0);
         line-height: 1.9;
         font-weight: $fw-400;
@@ -74,7 +50,79 @@
         @include max-w($sm) {
             line-height: 1.5;
         }
+
+        @include max-w($lg) {
+            padding-left: 48px;
+        }
+
+        &:not(:last-child) {
+            @include adaptiv-value("margin-bottom", 15, 10, 0);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 0;
+            transform: translateY(-50%);
+            border: 2px solid $accent;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px 25px;
+
+            @include max-w($lg) {
+                width: 38px;
+                height: 38px;
+                background-size: 23px 23px;
+            }
+        }
+
+        &--age12 {
+            &::before {
+                background-image: url("../img/icon/services/age12-icon.svg");
+            }
+        }
+
+        &--age7 {
+            &::before {
+                background-image: url("../img/icon/services/age7-icon.svg");
+            }
+        }
+
+        &--time {
+            &::before {
+                background-image: url("../img/icon/services/time-icon.svg");
+            }
+        }
+
+        &--view {
+            &::before {
+                background-image: url("../img/icon/about/view-icon.svg");
+            }
+        }
+
+        &--trainer {
+            &::before {
+                background-image: url("../img/icon/about/trainer-icon.svg");
+            }
+        }
+
+        &--map {
+            &::before {
+                background-image: url("../img/icon/services/map-icon.svg");
+            }
+        }
+
+        &--car {
+            &::before {
+                background-image: url("../img/icon/services/car-icon.svg");
+            }
+        }
     }
+
 
     &__price {
         display: flex;

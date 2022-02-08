@@ -90,13 +90,13 @@
         }
     }
 
-    &__next,
-    &__prev {
+    &__arrow {
         @include slick-arrow;
         width: 75px;
         height: 75px;
         background-color: $main;
         top: 65%;
+        position: absolute;
 
         @include max-w($lx) {
             width: 65px;
@@ -115,103 +115,104 @@
             background-color: $special;
         }
 
+        &:hover,
+        &:active {
+            .main-slider__icon {
+                filter: invert(1%) sepia(38%) saturate(181%) hue-rotate(213deg) brightness(150%) contrast(100%);
+            }
+        }
+
+
         &:focus {
-            border: 3px solid $accent;
+            border-color: $accent;
+        }
+
+        &--next {
+            right: 60px;
+
+            @include max-w($xl) {
+                right: 30px;
+            }
+        }
+
+        &--prev {
+            left: 60px;
+
+            @include max-w($xl) {
+                left: 30px;
+            }
         }
     }
 
-    &__next {
-        right: 60px;
-        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
-
-        &:hover,
-        &:active {
-            background-image: url('../img/icons/arrows/arrow-right2-icon.svg');
-        }
-
-        @include max-w($xl) {
-            right: 30px;
-        }
+    &__icon {
+        width: 40px;
+        height: 30px;
+        fill: $accent;
     }
+}
 
-    &__prev {
-        left: 60px;
-        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
+.slick-disabled {
+    background-color: $background;
+    opacity: 0.85;
+    cursor: default;
 
-        &:hover,
-        &:active {
-            background-image: url('../img/icons/arrows/arrow-left2-icon.svg');
-        }
-
-        @include max-w($xl) {
-            left: 30px;
-        }
-    }
-
-    .slick-disabled {
+    &:focus,
+    &:hover,
+    &:active {
+        border: none;
         background-color: $background;
-        opacity: 0.85;
-        cursor: default;
 
-        &:focus,
-        &:active {
-            border: none;
+        .main-slider__icon {
+            fill: $accent;
+            filter: none;
+        }
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    font-size: 0;
+
+    @include max-w($xl) {
+        bottom: 15px;
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        button {
+            width: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
+            height: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
+            background-color: $main;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:focus {
+                border-color: $accent;
+            }
+
+            &:hover {
+                background-color: $excretion;
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
         }
     }
 
-    .slick-disabled.main-slider__next {
-        background-image: url('../img/icons/arrows/arrow-right-icon.svg');
-    }
-
-    .slick-disabled.main-slider__prev {
-        background-image: url('../img/icons/arrows/arrow-left-icon.svg');
-    }
-
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 100px;
-        font-size: 0;
-
-        @include max-w($xl) {
-            bottom: 15px;
-        }
-
-        li {
-            &:not(:last-child) {
-                margin-right: 15px;
-            }
-
-            button {
-                width: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
-                height: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
-                background-color: $main;
-                border: none;
-                border-radius: 50%;
-                cursor: pointer;
-                transition: background-color 0.3s;
-
-                &:hover {
-                    background-color: $excretion;
-                }
-
-                &:active {
-                    opacity: 0.7;
-                }
-
-                &:focus {
-                    border: 2px solid $accent;
-                }
-            }
-        }
-
-        li.slick-active {
-            button {
-                background-color: $accent;
-            }
+    li.slick-active {
+        button {
+            background-color: $accent;
         }
     }
 }
