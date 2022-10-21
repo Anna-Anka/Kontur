@@ -1,5 +1,3 @@
-//const { default: Swiper } = require("swiper");
-
 $(function () {
 
     const swiper = new Swiper('.swiper', {
@@ -45,7 +43,7 @@ $(function () {
 
     $('.drop__link').on('click', function () {
         $('.drop').removeClass('drop--active');
-        $('.menu__icon').removeClass('menu__icon--active');
+        $('.menu__btn').removeClass('menu__btn--active');
     });
 
     //Мобильное меню
@@ -95,8 +93,6 @@ $(function () {
             filter: '.category-cup'
         }
     });
-
-
 
     //Формы
     const servicesTitle = document.querySelectorAll('.services-top__headding');
@@ -306,7 +302,7 @@ $(function () {
     });
 
     //Скрол
-    $('.main-slider__link, .services-top__link, .logo, .services-top__href, .drop__link').on('click', function (event) {
+    $('.main-slider__link, .services-top__link, .logo, .services-top__href').on('click', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 70;
@@ -319,6 +315,15 @@ $(function () {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 50;
+        $('body, html').animate({
+            scrollTop: top
+        }, 1500);
+    });
+
+    $('.drop__link').on('click', function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 85;
         $('body, html').animate({
             scrollTop: top
         }, 1500);

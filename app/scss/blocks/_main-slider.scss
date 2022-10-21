@@ -188,8 +188,8 @@
         }
 
         button {
-            width: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
-            height: calc(12px + (20 - 12) * ((100vw - 320px)/(1400-320)));
+            width: calc(12px + (20 - 12) * ((100vw - 320px)/(1400 - 320)));
+            height: calc(12px + (20 - 12) * ((100vw - 320px)/(1400 - 320)));
             background-color: $main;
             border: 2px solid transparent;
             border-radius: 50%;
