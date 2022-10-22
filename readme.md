@@ -7,6 +7,7 @@
 2) Html + плагин gulp-file-include
 3) CSS и препроцессор scss
 4) javascript и jQuery 
+5) Методология БЭМ
 
 <p></p>
 
